@@ -4,7 +4,7 @@
  * PSR-4 class autoloader
  */
 require_once 'vendor/autoload.php';
-
+const TEXTDOMAIN = 'crispwp';
 use RST\Theme;
 
 $theme = Theme::getInstance();
@@ -15,6 +15,22 @@ $theme = Theme::getInstance();
 
 use RST\Base\Structure\PostType;
 use RST\Base\Structure\Taxonomy;
+
+$services = new PostType('service');
+$services->setLabels([
+    'name' => __('Services',TEXTDOMAIN),
+]);
+
+$servicesCategory = new Taxonomy('service_category', 'services');
+$servicesCategory->setLabels([
+    'name' => __('Services categories',TEXTDOMAIN),
+]);
+$servicesCategory->uses($services);
+
+/**
+ * Rest resource checking
+ */
+
 use RST\Rest\Resources\TestData;
 
 $theme->rest->setNamespace('rst/v1');
@@ -54,67 +70,56 @@ try {
  */
 function rst_load_assets()
 {
+    $ver='';
+    require_once 'src/ver.php';
     //--- Load scripts and styles only for frontend: -----------------------------
     if ( ! is_admin()) {
         // Styles
-        wp_enqueue_style('app', get_template_directory_uri() . '/assets/dist/app.min.css');
+        wp_enqueue_style('app', get_template_directory_uri() . '/assets/dist/app.min.css',[],$ver);
 
         // Scripts
         wp_deregister_script('jquery');
         wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', false, null, false);
         wp_enqueue_script('jquery');
-        wp_enqueue_script('text-lines', get_template_directory_uri() . '/assets/lib/text-lines.js', ['jquery'], '1.0.0', true);
-        wp_enqueue_script('app', get_template_directory_uri() . '/assets/dist/app.min.js', [], '1.0.0', true);
+        wp_enqueue_script('app', get_template_directory_uri() . '/assets/dist/app.min.js', ['jquery'], $ver, true);
+        // AJAX
+        wp_localize_script( 'app', 'myajax',
+            array(
+                'url' => admin_url('admin-ajax.php')
+            )
+        );
     }
 
 }
 
 add_action('wp', 'rst_load_assets');
 
-/**
- * Admin assets for Custom ACF Blocks
- */
-add_action('admin_enqueue_scripts', 'load_assets_admin');
-function load_assets_admin() {
-    if (is_admin()) {
-        // Styles
-        wp_enqueue_style('admin-acf-blocks', get_template_directory_uri() . '/assets/dist/admin.min.css');
-    }
-}
-
-function basetheme_options_capability(){
-    $role = get_role( 'administrator' );
-    $role->add_cap( 'theme_options_view' );
-}
-add_action( 'admin_init', 'basetheme_options_capability' );
-
-//theme options tab in appearance
-if( function_exists( 'acf_add_options_sub_page' ) && current_user_can( 'theme_options_view' ) ) {
-    acf_add_options_sub_page(
-        array(
-            'title'  => 'Theme Options',
-            'parent' => 'themes.php',
-        ) );
-}
-
-add_action('acf/init', 'relaunch_acf_init_blocks');
-function relaunch_acf_init_blocks()
-{
-    if (function_exists('acf_register_block_type')) {
-
-        if (file_exists(get_template_directory() . '/parts/acf-blocks/acf-registered-blocks.php')) {
-            require_once 'parts/acf-blocks/acf-registered-blocks.php';
-        }
-    }
-}
-
 require_once 'src/helpers.php';
 require_once 'src/Hooks/user-creating.php';
+define( 'ALLOW_UNFILTERED_UPLOADS', true );
 
-add_filter( 'upload_mimes', 'svg_upload_allow' );
-
-# Добавляет SVG в список разрешенных для загрузки файлов.
-function svg_upload_allow( $mimes ) {
-    $mimes['svg']  = 'image/svg';
-    return $mimes;
+add_action('acf/init', 'acf_op_init');
+function acf_op_init() {
+    if( function_exists('acf_add_options_page') ) {
+        acf_add_options_page(array(
+            'page_title' 	=> __('Theme General Settings',TEXTDOMAIN),
+            'menu_title'	=> __('Theme Settings',TEXTDOMAIN),
+            'menu_slug' 	=> __('theme-general-settings',TEXTDOMAIN),
+            'capability'	=> __('edit_posts',TEXTDOMAIN),
+            'redirect'		=> false
+        ));
+        acf_add_options_sub_page(array(
+            'page_title' 	=> __('Theme Header Settings',TEXTDOMAIN),
+            'menu_title'	=> __('Header',TEXTDOMAIN),
+            'parent_slug'	=> __('theme-general-settings',TEXTDOMAIN),
+            'post_id'       => 'option-header',
+        ));
+        acf_add_options_sub_page(array(
+            'page_title' 	=> __('Theme Footer Settings',TEXTDOMAIN),
+            'menu_title'	=> __('Footer',TEXTDOMAIN),
+            'parent_slug'	=> __('theme-general-settings',TEXTDOMAIN),
+            'post_id'       => 'option-footer',
+        ));
+    }
 }
+

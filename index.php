@@ -1,16 +1,11 @@
 <?php get_header();?>
-    <?php
-        if ( have_rows('page_elements') ) {
-            while (have_rows('page_elements')) {
-                the_row();
-                $name = get_row_layout();
-                get_template_part(
-                    'acf-blocks/' . $name,
-                    NULL,
-                    ['section-id' => $name] // in file need use: "$args['section-id']" to setup unique section id="value"
-                );
-
-            }
-        }
-    ?>
+<?php if ( have_posts() ) : ?>
+    <main>
+        <div class="container">
+            <?php while ( have_posts() ) : the_post(); ?>
+                <?php the_content();?>
+            <?php endwhile;?>
+        </div>
+    </main>
+<?php endif;?>
 <?php get_footer();

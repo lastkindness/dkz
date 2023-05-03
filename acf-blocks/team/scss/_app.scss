@@ -1,0 +1,39 @@
+.team {
+    padding: 50px 0;
+
+    h2 {
+        text-align: center;
+    }
+
+    .row {
+        @include media('>=tablet') {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+    }
+
+    .col {
+        padding: 0 0 30px;
+
+        @include media('>=tablet') {
+            width: 33.332%;
+            padding: 0 15px 30px;
+        }
+    }
+
+    &__box {
+        img {
+            margin: 0 0 16px;
+        }
+
+        h4 {
+            margin: 0 0 8px;
+        }
+
+        &-position {
+            display: block;
+            margin: 0 0 8px;
+        }
+    }
+}

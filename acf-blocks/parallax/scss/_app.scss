@@ -1,0 +1,20 @@
+.parallax {
+    padding: 50px 0;
+
+    h2 {
+        text-align: center;
+    }
+
+    &__box {
+        background-size: cover;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding-top: 60%;
+
+        @include media("<=desktop") {
+            background-position: 50% !important;
+            background-attachment: unset;
+        }
+    }
+}

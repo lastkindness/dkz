@@ -7,8 +7,34 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header class="header" id="header">
-
-</header>
-<main class="main">
-<?php # TODO: code here ?>
+<div id="wrapper">
+    <header class="header">
+        <div class="container">
+            <?php if($header_logo=get_field('logo','option-header')):?>
+                <strong class="logo">
+                    <a href="<?php echo home_url(); ?>">
+                        <img src="<?php echo $header_logo['url'];?>" alt="<?php echo $header_logo['alt'];?>">
+                    </a>
+                </strong>
+            <?php endif;?>
+            <?php
+            wp_nav_menu( [
+                'theme_location' => 'primary',
+                'menu'            => '',
+                'container'       => 'nav',
+                'container_class' => 'navbar',
+                'container_id'    => '',
+                'menu_class'      => 'navbar',
+                'menu_id'         => '',
+                'echo'            => true,
+                'before'          => '',
+                'after'           => '',
+                'link_before'     => '',
+                'link_after'      => '',
+                'items_wrap'      => '<a href="#" class="nav-opener"><span></span></a><ul class="navbar__nav">%3$s</ul>',
+                'depth'           => 0,
+                'walker'          => '',
+            ] );
+            ?>
+        </div>
+    </header>

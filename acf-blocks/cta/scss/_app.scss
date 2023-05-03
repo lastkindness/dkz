@@ -1,0 +1,11 @@
+.cta {
+    padding: 32px 0;
+    text-align: center;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    @include media('>=desktop') {
+        padding: 64px 0;
+    }
+}

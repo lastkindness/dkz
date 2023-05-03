@@ -1,16 +1,12 @@
 <?php
+
 /*
- * Template name: Front Home Template
- */
 
-get_header('front'); ?>
+Template name: Front Home
 
-<section class="section">
-    <div class="container">
-        <div class="section__wrapper">
-
-        </div>
-    </div>
-</section>
-
+*/ ?>
+<?php get_header('front'); ?>
+<main>
+    <?php //get_template_part( 'acf-blocks/hero/index_front' ); ?>
+</main>
 <?php get_footer('front'); ?>

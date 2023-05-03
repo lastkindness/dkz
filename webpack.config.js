@@ -11,7 +11,7 @@ module.exports = {
     mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
 
     entry: {
-        app: './assets/src/js/app.js',
+        app: './assets/src/js/script.js',
         blocks: './blocks/entry.js'
     },
 

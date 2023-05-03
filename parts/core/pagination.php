@@ -2,4 +2,4 @@
 /**
  * Pagination for archive pages
  */
-new \rst\Pagination( false );
+new \RST\Pagination(false,'<','>',1);

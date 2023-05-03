@@ -1,0 +1,29 @@
+@import "~glightbox/dist/css/glightbox.min.css";
+
+.gallery {
+    padding: 50px 0;
+
+    h2 {
+        text-align: center;
+    }
+
+    .row {
+        @include media(">=phone") {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+    }
+
+    .col {
+        padding: 0 15px 30px;
+
+        @include media(">=phone") {
+            width: 50%;
+        }
+
+        @include media(">=tablet") {
+            width: 25%;
+        }
+    }
+}

@@ -73,7 +73,7 @@ final class Theme extends Singleton
     {
 
         $menus = [
-            'primary' => esc_html__('Primary', 'rst')
+            'primary' => esc_html__('Primary', TEXTDOMAIN)
         ];
 
         register_nav_menus($menus);
@@ -94,9 +94,11 @@ final class Theme extends Singleton
      */
     public function filterNavMenusWrapper($args)
     {
-
-        $args['container']  = 'nav';
-        $args['menu_class'] = 'menu-wrapper';
+        $locatio=['primary']; //Add menus location to this array
+        if(in_array($args['theme_location'],$locatio)){
+            $args['container']  = 'nav';
+            $args['menu_class'] = 'menu-wrapper';
+        }
         return $args;
 
     }

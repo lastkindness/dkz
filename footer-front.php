@@ -1,11 +1,6 @@
-</main>
-<footer class="footer" id="footer">
-    <div class="container">
-        <div class="footer__wrapper">
-        </div>
-    </div>
-</footer>
+<footer class="footer">
 
+</footer>
 <?php wp_footer(); ?>
 </div>
 </body>

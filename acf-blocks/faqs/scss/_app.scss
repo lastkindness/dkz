@@ -1,0 +1,35 @@
+.faq {
+    padding: 50px 0;
+
+    h3 {
+        text-align: center;
+    }
+}
+
+.handorgel {
+    &__header {
+        &--open {
+            .handorgel__header__button {
+                &:before {
+                    transform: translateY(-50%) rotate(-180deg);
+                }
+            }
+        }
+
+        &__button {
+            position: relative;
+
+            &:before {
+                @include animate(transform);
+
+                content: "\e903";
+                font-family: "icomoon";
+                font-size: 20px;
+                position: absolute;
+                top: 50%;
+                right: 15px;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

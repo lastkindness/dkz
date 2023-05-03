@@ -1,0 +1,257 @@
+.header {
+    position: relative;
+    padding: 16px 0;
+    flex-shrink: 0;
+
+    @include media(">=desktop") {
+        padding: 32px 0;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__search {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        z-index: 10;
+        padding: 28px 0 25px;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+
+        .search-active & {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        form {
+            position: relative;
+            max-width: 760px;
+            margin: 0 auto;
+            width: 100%;
+
+            input[type="search"] {
+                font-size: 13px;
+                line-height: 1.154;
+                letter-spacing: 0.02em;
+                border: none;
+                color: $black;
+                width: 100%;
+                height: 41px;
+                border-radius: 0;
+                border-bottom: 2px solid $black;
+                margin: 0;
+                padding: 5px 34px 0 4px;
+
+                @include media(">=tablet") {
+                    padding: 5px 50px 0 4px;
+                }
+            }
+
+            button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 6px;
+                font-size: 16px;
+                padding: 0;
+
+                @include media(">=tablet") {
+                    font-size: 20px;
+                    right: 13px;
+                    margin-top: -5px;
+                }
+            }
+        }
+    }
+
+    .search-opener {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 20px;
+        color: $black;
+        text-decoration: none;
+        margin: 0 52px 0 0;
+
+        @include media(">=desktop") {
+            margin: 0 0 0 16px;
+        }
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.logo {
+    display: block;
+    width: 180px;
+
+    @include media(">=desktop") {
+        width: 240px;
+    }
+
+    a {
+        display: block;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: calc(100% - 240px);
+
+    &__nav {
+        @include animate(opacity visibility);
+
+        @include media("<desktop") {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: $white;
+            padding: 15px;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 996;
+        }
+
+        @include media(">=desktop") {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.nav {
+    @extend %listreset;
+
+    @include media(">=desktop") {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -10px;
+    }
+
+    > li {
+        position: relative;
+        padding: 0 0 10px;
+
+        @include media(">=desktop") {
+            padding: 0 10px;
+        }
+
+        &:hover {
+            .sub-menu {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+
+    a {
+        color: $black;
+        text-decoration: none;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.sub-menu {
+    @extend %listreset;
+    @include animate(opacity visibility);
+
+    display: none;
+    padding: 0 0 7px;
+    z-index: 99;
+
+    @include media(">=desktop") {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 99;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        font-size: 13px;
+        line-height: 1.1;
+        padding: 15px 10px 10px;
+        background: $black;
+    }
+
+    li {
+        padding: 0 0 5px;
+    }
+
+    a {
+        color: $white;
+    }
+}
+
+.nav-opener {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 42px;
+    height: 37px;
+    transform: translateY(-50%);
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    z-index: 99;
+
+    @include media(">=desktop") {
+        display: none;
+    }
+
+    &:before,
+    &:after,
+    span {
+        background: $black;
+        position: absolute;
+        top: 19px;
+        left: 20%;
+        right: 20%;
+        height: 3px;
+        margin-top: -2px;
+        transition: all 0.2s linear;
+    }
+
+    &:before,
+    &:after {
+        content: "";
+        top: 10px;
+    }
+
+    &:after {
+        top: 28px;
+    }
+
+    .nav-active & {
+        &:before,
+        &:after {
+            transform: rotate(45deg);
+            top: 18px;
+            left: 15%;
+            right: 15%;
+        }
+
+        span {
+            opacity: 0;
+        }
+
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
+}

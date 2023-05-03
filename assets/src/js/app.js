@@ -1,11 +1,7 @@
 'use strict';
+
 /**
  *  Load modules
  */
-import main from "./modules/main"
-
-import '../scss/app.scss';
-
-$(document).ready(() => {
-    main();
-});
+import Slick from 'slick-carousel/slick/slick.min.js';
+import burgerMenu from './modules/burgerMenu.js';

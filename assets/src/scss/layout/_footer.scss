@@ -1,0 +1,11 @@
+.footer {
+    flex-shrink: 0;
+    padding: 50px 0;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
