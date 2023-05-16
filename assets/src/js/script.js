@@ -1,6 +1,5 @@
 import import_js from './app.js';
 import '../scss/styles.scss';
-//import gitkeep_block from '../../../acf-blocks/.gitkeep/js/app.js';
 import blogpost_block from '../../../acf-blocks/blog-post/js/app.js';
 import columnscards_block from '../../../acf-blocks/columns-cards/js/app.js';
 import columnstext_block from '../../../acf-blocks/columns-text/js/app.js';

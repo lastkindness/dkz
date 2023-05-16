@@ -1,11 +1,61 @@
 .footer {
+    /*align-items: center;*/
     flex-shrink: 0;
-    padding: 50px 0;
-
-    .container {
+    padding: 48px 105px;
+    /*.container {
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
+    }*/
+    background-color: $backgroundcolor;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 232px;
+        height: 35px;
+    }
+    &__icons {
+        display: flex;
+    }
+    &__round {
+        margin-left: 32px;
+        background: radial-gradient(68.15% 53.47% at 89.84% 53.91%, #FDEEFF 0%, #B4B5CB 100%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icon-Subtract {
+            font-size: 22px;
+        }
+        .icon-instagram {
+            font-size: 22px;
+        }
+        .icon {
+            &:before {
+                color: $iconcolor;
+            }
+        }
+        .icon-facebook {
+            font-size: 22px;
+        }
+        &:hover {
+            border-bottom: none;
+            cursor: pointer;
+            background: $backgroundcolor;
+            &.icon {
+                color: $white;
+            }
+        }
+    }
+    &__text {
+        margin: 0;
+        font-size: 14px;
+        line-height: 140%;
+        color: $btncolor;
     }
 }
