@@ -1,34 +1,18 @@
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('/dkz/assets/fonts/Montserrat-Regular.woff2') format('woff2');
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
-/*@font-face {
+@font-face {
     font-family: 'Monument Extended';
-    src: url('/dkz/assets/fonts/MonumentExtended-Regular.woff2') format('woff2');
+    src: url('../fonts/MonumentExtended-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}*/
-
-@font-face {
-    font-family: 'Monument Extended';
-    src: url('/dkz/assets/fonts/MonumentExtended-Ultrabold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'icomoon';
-    src: url('../fonts/icomoon.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
