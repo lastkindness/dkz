@@ -1,0 +1,50 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: $backgroundcolor;
+    &__wrapper {
+        padding: 0 165px 0 165px;
+        display: flex;
+    }
+    &__left {
+        position: relative;
+        width: 670px;
+        margin-top: 90px;
+        z-index: 0;
+        &-title {
+            color: $btncolor;
+        }
+        &-subtitle {
+            color: $btncolor;
+            margin-top: 28px;
+        }
+        &-btn {
+            margin-top: 40px;
+            &.btn {
+                padding: 16px 18px;
+            }
+        }
+    }
+    &__right {
+        width: 970px;
+        height: 545px;
+        position: absolute;
+        z-index: 1;
+        margin-left: 588px;
+    }
+    a.hero__right-link {
+        text-decoration: none;
+    }
+    a.hero__right-linked {
+        text-decoration: none;
+    }
+    &__back {
+        display: none;
+    }
+    &__background {
+        display: none;
+    }
+}

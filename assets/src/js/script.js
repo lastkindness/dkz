@@ -1,4 +1,5 @@
 import import_js from './app.js';
+// eslint-disable-next-line import/no-unresolved
 import '../scss/styles.scss';
 import blogpost_block from '../../../acf-blocks/blog-post/js/app.js';
 import columnscards_block from '../../../acf-blocks/columns-cards/js/app.js';
