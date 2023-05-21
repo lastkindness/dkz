@@ -18,7 +18,7 @@
             <nav class="navbar header__nav">
                 <a href="#" class="nav-opener"><span></span></a>
                 <ul class="navbar__nav">
-                    <li><a href="#">Services</a></li>
+                    <li class="current_page_item"><a href="#">Services</a></li>
                     <li>
                         <a href="#">Portfolio</a>
                         <ul class="sub-menu">
