@@ -19,9 +19,9 @@ $breakpoints: (
 @import 'base/forms';
 @import "base/normalize";
 @import "base/fonts";
+@import "base/common";
 
 @import "section/hero";
 
 @import "layout/header";
-@import "layout/common";
 @import "layout/footer";
