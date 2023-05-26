@@ -35,7 +35,23 @@ Template name: Front Home
     </section>
 
 
-    section.
+<!--    <section class="about">
+        <div class="container">
+            <div class="about__wrapper">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/gradient.svg" alt="" class="about__background">
+                <div class="about__container">
+                    <h1 class="about__title">need to help?</h1>
+                    <div class="about__column">
+                        <div class="about__column-item">
+                            <span class="about__column-icon icon"></span>
+                            <div class="about__column-text">Support 24/7</div>
+                        </div>
+                        <p class="about__column-item">Lorem Ipsum is simply dummy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
 
 
 </main>
