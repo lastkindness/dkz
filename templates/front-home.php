@@ -35,7 +35,7 @@ Template name: Front Home
     </section>
 
 
-<!--    <section class="about">
+    <section class="about">
         <div class="container">
             <div class="about__wrapper">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/gradient.svg" alt="" class="about__background">
@@ -43,15 +43,16 @@ Template name: Front Home
                     <h1 class="about__title">need to help?</h1>
                     <div class="about__column">
                         <div class="about__column-item">
-                            <span class="about__column-icon icon"></span>
-                            <div class="about__column-text">Support 24/7</div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/guard.svg" alt="" class="about__column-icon">
+                            <div class="about__column-support">Support 24/7</div>
                         </div>
-                        <p class="about__column-item">Lorem Ipsum is simply dummy</p>
+                        <p class="about__column-text">Lorem Ipsum is simply dummy</p>
                     </div>
+                    <button class="about__btn btn">Contact us</button>
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
 
 
 </main>
