@@ -6,13 +6,13 @@
     background-position: center;
     background: $backgroundcolor;
     &__wrapper {
-        padding: 0 165px 0 165px;
+        padding: 0 177px 0 177px;
         display: flex;
     }
     &__left {
         position: relative;
         width: 670px;
-        margin-top: 90px;
+        margin-top: 200px;
         z-index: 0;
         &-title {
             color: $btncolor;
@@ -24,7 +24,7 @@
         &-btn {
             margin-top: 40px;
             &.btn {
-                padding: 16px 18px;
+                padding: 23px 28px;
             }
         }
     }
@@ -32,19 +32,42 @@
         width: 970px;
         height: 545px;
         position: absolute;
-        z-index: 1;
-        margin-left: 588px;
-    }
-    a.hero__right-link {
+        z-index: 4;
+        margin: 150px 0 0 588px;
         text-decoration: none;
-    }
-    a.hero__right-linked {
-        text-decoration: none;
+        &-linked {
+            position: relative;
+            top: -95px;
+            left: 115px;
+            z-index: 3;
+        }
+        &-play {
+            position: relative;
+            z-index: 3;
+            top: 45px;
+            left: 142px;
+        }
+        &-words {
+            height: 183px;
+            width: 183px;
+        }
     }
     &__back {
-        display: none;
+        height: 695px;
+        width: 1062px;
+        position: relative;
+        display: block;
+        top: -95px;
+        left: -755px;
+        z-index: 6;
     }
     &__background {
-        display: none;
+        height: 900px;
+        width: 1500px;
+        display: block;
+        position: relative;
+        top: -30px;
+        left: -1180px;
+        z-index: 6;
     }
 }

@@ -1,17 +1,11 @@
 .footer {
-    /*align-items: center;*/
     flex-shrink: 0;
-    padding: 48px 105px;
-    /*.container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }*/
     background-color: $backgroundcolor;
     &__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 48px 175px;
     }
     &__logo {
         width: 232px;

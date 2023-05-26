@@ -4,27 +4,29 @@
     left: 0;
     right: 0;
     width: 100%;
-    z-index: 100;
-    padding: 35px 165px 35px;
     flex-shrink: 0;
     display: flex;
+    z-index: 5;
     align-items: center;
     justify-content: space-between;
     background-color: $backgroundcolor;
     &__logo {
-        height: 35px;
-        width: 232px;
+        &.logo {
+            height: 35px;
+            width: 232px;
+        }
     }
     &__btn {
         display: flex;
-        width: 200px;
+        width: 197px;
     }
-    .container {
+    &__wrapper {
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+        flex-direction: row;
         align-items: center;
-        width: 100%;
+        justify-content: space-between;
+        min-width: 1860px;
+        padding: 28px 180px;
     }
     a.link {
         &:hover {
@@ -124,8 +126,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: calc(100% - 240px);
-    margin-right: 35px;
     li {
         margin-right: 35px;
     }

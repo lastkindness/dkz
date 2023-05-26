@@ -25,14 +25,17 @@ Template name: Front Home
                     <a href="#" class="hero__right-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/robot.svg" alt="" class="hero__right-img"></a>
                     <a href="#" class="hero__right-linked">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/triangle.svg" alt="" class="hero__right-play">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/Vector.svg" alt="" class="hero__right-play">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/Vector.svg" alt="" class="hero__right-words">
                     </a>
                 </div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/wave.svg" alt="" class="hero__back">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/wave-two.svg" alt="" class="hero__background">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/back.svg" alt="" class="hero__back">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/background.svg" alt="" class="hero__background">
             </div>
         </div>
     </section>
+
+
+    section.
 
 
 </main>
