@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/src/img/main.jpg')"> <?php body_class(); ?>>
 <div id="wrapper">
     <header class="header">
         <div class="container">

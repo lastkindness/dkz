@@ -6,10 +6,10 @@
     width: 100%;
     flex-shrink: 0;
     display: flex;
-    z-index: 5;
+    z-index: 50;
     align-items: center;
     justify-content: space-between;
-    background-color: $backgroundcolor;
+    background: $backgroundcolor;
     &__logo {
         &.logo {
             height: 35px;
@@ -18,6 +18,7 @@
     }
     &__btn {
         display: flex;
+        justify-content: center;
         width: 197px;
     }
     &__wrapper {

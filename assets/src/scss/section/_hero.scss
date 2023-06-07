@@ -4,7 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background: $backgroundcolor;
+    /*background: $backgroundcolor;*/
     &__wrapper {
         padding: 0 177px 0 177px;
         display: flex;
@@ -39,11 +39,17 @@
             position: relative;
             top: -95px;
             left: 115px;
-            z-index: 3;
+            z-index: 2;
+        }
+        &-link {
+            text-decoration: none;
+        }
+        &-img {
+            text-decoration: none;
         }
         &-play {
             position: relative;
-            z-index: 3;
+            z-index: 2;
             top: 45px;
             left: 142px;
         }
@@ -70,4 +76,8 @@
         left: -1180px;
         z-index: 6;
     }
+}
+
+.backoground {
+    background-size: 100%;
 }

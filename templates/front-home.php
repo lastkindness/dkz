@@ -8,6 +8,8 @@ Template name: Front Home
 <?php get_header('front'); ?>
 <main>
 
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/main.jpg" alt="" class="backoground">
+
     <section class="hero">
         <div class="container">
             <div class="hero__wrapper">
@@ -28,8 +30,69 @@ Template name: Front Home
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/Vector.svg" alt="" class="hero__right-words">
                     </a>
                 </div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/back.svg" alt="" class="hero__back">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/background.svg" alt="" class="hero__background">
+<!--                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/back.svg" alt="" class="hero__back">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/background.svg" alt="" class="hero__background">-->
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <div class="container">
+            <div class="subscribe__wrapper">
+                <h1 class="subscribe__title">Subscribe to our news</h1>
+                <div class="subscribe__subtitle h4">Stay up to date on the latest marketing ideas!</div>
+                <div class="subscribe__input">
+                    <input placeholder="Write your email here" type="text" class="subscribe__input-input">
+                    <span class="subscribe__input-icon icon icon-mail"></span>
+                    <button class="subscribe__input-btn btn">Subscribe</button>
+                </div>
+                <div class="subscribe__icons">
+                    <a class="subscribe__round">
+                        <span class="subscribe__icon icon icon-Subtract"></span>
+                    </a>
+                    <a class="subscribe__round">
+                        <span class="subscribe__icon icon icon-instagram"></span>
+                    </a>
+                    <a class="subscribe__round">
+                        <span class="subscribe__icon icon icon-facebook"></span>
+                    </a>
+                    <a class="subscribe__round">
+                        <span class="subscribe__icon icon icon-linkedin"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-us">
+        <div class="container">
+            <div class="about-us__wrapper">
+                <div class="about-us__pictures">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/holecolor.jpg" alt="" class="about-us__pictures-item">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/helicopter.jpg" alt="" class="about-us__pictures-item">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/hole.jpg" alt="" class="about-us__pictures-item">
+                </div>
+                <div class="about-us__description">
+                    <h2 class="about-us__description-title">About Us</h2>
+                    <h4 class="about-us__description-subtitle">Passionate AV Experts</h4>
+                    <p class="about-us__description-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p class="about-us__description-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal </p>
+                    <div class="about-us__bottom">
+                        <div class="about-us__bottom-item">
+                            <div class="about-us__bottom-title h3">8K +</div>
+                            <p class="about-us__bottom-text">Happy Customer</p>
+                        </div>
+                        <div class="about-us__bottom-item">
+                            <div class="about-us__bottom-title h3">24 +</div>
+                            <p class="about-us__bottom-text">Awards Winning</p>
+                        </div>
+                        <div class="about-us__bottom-item">
+                            <div class="about-us__bottom-title h3">28 +</div>
+                            <p class="about-us__bottom-text">Years of Experience</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -53,7 +116,6 @@ Template name: Front Home
             </div>
         </div>
     </section>
-
 
 </main>
 <?php get_footer('front'); ?>

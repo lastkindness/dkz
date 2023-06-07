@@ -18,11 +18,13 @@ textarea {
 	-webkit-border-radius: 0;
     box-sizing: border-box;
     outline: none;
-	border: 1px solid $form-element-border-color;
+    border-radius: 12px;
+    border: 1px solid $greymaxcolor;
 	padding: $form-element-padding;
+    background: radial-gradient(112.16% 1918.01% at 45.89% -17.4%, #1C1D25 0%, #0C0D0F 100%);
 
 	@include placeholder {
-		color: $placeholder-color;
+		color: $btn-color;
 	}
 }
 

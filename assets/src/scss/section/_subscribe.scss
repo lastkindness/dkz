@@ -1,19 +1,37 @@
-.footer {
-    flex-shrink: 0;
-    background: $backgroundcolor;
+.subscribe {
+    /*background: $backgroundcolor;*/
     &__wrapper {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
-        padding: 48px 175px;
     }
-    &__logo {
-        width: 232px;
-        height: 35px;
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &__input {
+        height: 60px;
+        margin-top: 45px;
+        &-input {
+            height: 60px;
+            width: 711px;
+            color: $greycolor;
+            border-radius: 12px;
+            border: 1px solid $greymaxcolor;
+        }
+        &-btn {
+            padding: 20px 56px;
+            position: absolute;
+            right: 30%;
+        }
     }
     &__icons {
         display: flex;
-        margin-left: 100px;
+        margin-top: 40px;
     }
     &__round {
         margin-left: 32px;
@@ -24,33 +42,33 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
         .icon-Subtract {
             font-size: 22px;
         }
+
         .icon-instagram {
             font-size: 22px;
         }
+
         .icon {
             &:before {
                 color: $iconcolor;
             }
         }
+
         .icon-facebook {
             font-size: 22px;
         }
+
         &:hover {
             border-bottom: none;
             cursor: pointer;
             background: $backgroundcolor;
+
             &.icon {
                 color: $white;
             }
         }
-    }
-    &__text {
-        margin: 0;
-        font-size: 14px;
-        line-height: 140%;
-        color: $btncolor;
     }
 }
