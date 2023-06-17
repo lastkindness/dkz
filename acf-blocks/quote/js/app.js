@@ -2,8 +2,6 @@
  *  Load modules
  */
 import quoteSwiper from './modules/quoteSwiper.js';
-
-// $(document).ready(() => {
-//
-// });
-
+$(document).ready(() => {
+quoteSwiper();
+});

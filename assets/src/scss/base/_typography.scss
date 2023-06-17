@@ -7,7 +7,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6,
 .h {
-	font-family: $base-font-serif;
+	font-family: $monument;
 	font-weight: 700;
     line-height: 1.2;
 	margin: 0 0 0.5em;
@@ -20,6 +20,9 @@ h1, .h1 {
 	font-size: $h1-font-size;
     letter-spacing: 0.01em;
     text-transform: lowercase;
+    @include media("<=tablet") {
+        font-size: 40px;
+    }
 }
 
 h2, .h2 {
@@ -28,6 +31,9 @@ h2, .h2 {
 	font-size: $h2-font-size;
     letter-spacing: 0.01em;
     text-transform: lowercase;
+    @include media("<=tablet") {
+        font-size: 32px;
+    }
 }
 
 h3, .h3 {
@@ -35,6 +41,9 @@ h3, .h3 {
     line-height: 120%;
 	font-size: $h3-font-size;
     letter-spacing: 0.04em;
+    @include media("<=tablet") {
+        font-size: 28px;
+    }
 }
 
 h4, .h4 {
@@ -42,6 +51,9 @@ h4, .h4 {
     letter-spacing: 0.04em;
 	font-size: $h4-font-size;
     font-weight: 400;
+    @include media("<=tablet") {
+        font-size: 24px;
+    }
 }
 
 h5, .h5 {
@@ -61,16 +73,37 @@ a {
 	color: $white;
 	outline: none;
 	-webkit-tap-highlight-color: transparent;
-
-	&:hover,
-	&:focus {
-		text-decoration: none;
-        border-bottom: 1px solid #EBEBFC;
-	}
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    &:hover {
+        &:after {
+            -webkit-transform-origin: left;
+            transform-origin: left;
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+    }
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -.275em;
+        left: 0;
+        right: 0;
+        transition: -webkit-transform .75s cubic-bezier(.19,1,.22,1);
+        /*transition: transform .75s cubic-bezier(.19,1,.22,1);*/
+        transition: transform .75s cubic-bezier(.19,1,.22,1),-webkit-transform .75s cubic-bezier(.19,1,.22,1);
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: right;
+        transform-origin: right;
+        border-bottom: 1px solid $white;
+    }
 }
 
 li {
-    font-family: $base-font-serif;
+    font-family: $monument;
     list-style-type: none;
     font-size: 14px;
     line-height: 20px;

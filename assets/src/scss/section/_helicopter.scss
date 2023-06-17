@@ -1,0 +1,36 @@
+.helicopter {
+    margin: 120px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &__wrapper {
+        padding: 293px 0 396px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__linked {
+        margin-top: 625px;
+        position: absolute;
+        left: -11px;
+        &-play {
+            position: relative;
+            z-index: 2;
+            top: 45px;
+            left: 142px;
+        }
+        &-words {
+            height: 183px;
+            width: 183px;
+        }
+    }
+    &__vector {
+        margin-top: 230px;
+        position: absolute;
+        left: 13%;
+    }
+    &__text {
+        width: 785px;
+    }
+}

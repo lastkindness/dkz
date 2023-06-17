@@ -6,7 +6,6 @@
     background-position: center;
     /*background: $backgroundcolor;*/
     &__wrapper {
-        padding: 0 177px 0 177px;
         display: flex;
     }
     &__left {
@@ -18,8 +17,9 @@
             color: $btncolor;
         }
         &-subtitle {
-            color: $btncolor;
+            color: $greycolor;
             margin-top: 28px;
+            font-size: 18px;
         }
         &-btn {
             margin-top: 40px;
@@ -34,18 +34,19 @@
         position: absolute;
         z-index: 4;
         margin: 150px 0 0 588px;
-        text-decoration: none;
         &-linked {
             position: relative;
             top: -95px;
             left: 115px;
             z-index: 2;
+            &:after {
+                display: none;
+            }
         }
         &-link {
-            text-decoration: none;
-        }
-        &-img {
-            text-decoration: none;
+            &:after {
+                display: none;
+            }
         }
         &-play {
             position: relative;

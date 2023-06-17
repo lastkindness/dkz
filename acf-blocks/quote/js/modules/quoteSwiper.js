@@ -1,6 +1,7 @@
 import Swiper from 'swiper/swiper-bundle';
 
 $(document).ready(() => {
+    console.log("test");
     if (jQuery('.quote__slider').length) {
         const swiper = new Swiper(".quote__slider", {
             loop: true,

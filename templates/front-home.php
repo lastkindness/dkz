@@ -8,8 +8,6 @@ Template name: Front Home
 <?php get_header('front'); ?>
 <main>
 
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/main.jpg" alt="" class="backoground">
-
     <section class="hero">
         <div class="container">
             <div class="hero__wrapper">
@@ -97,13 +95,60 @@ Template name: Front Home
         </div>
     </section>
 
+    <section class="helicopter" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/src/img/helicopter.jpg')">
+        <div class="container">
+            <div class="helicopter__wrapper">
+                <div class="helicopter__text h3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/striple.svg" alt="" class="helicopter__vector">
+                <a href="#" class="helicopter__linked">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/triangle.svg" alt="" class="helicopter__linked-play">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/Vector.svg" alt="" class="helicopter__linked-words">
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <section class="about">
+    <section class="quote">
+        <div class="container">
+            <h2 class="quote__heading">reviews</h2>
+            <div class="quote__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide quote__slider">
+                        <blockquote class="blockquote">
+                            <div class="quote__heads">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/avatar.jpg" alt="" class="quote__heads-img">
+                                <div class="quote__heads-title h4">Tom Hardy</div>
+                                <p class="quote__heads-text">Satisfied customer</p>
+                            </div>
+                            <p class="quote__text">A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element.</p>
+                            <cite>Author name</cite>
+                        </blockquote>
+                    </div>
+                    <div class="swiper-slide">
+                        <blockquote class="blockquote">
+                            <div class="quote__heads">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/avatar.jpg" alt="" class="quote__heads-img">
+                                <div class="quote__heads-title h4">Tom Hardy</div>
+                                <p class="quote__heads-text p">Satisfied customer</p>
+                            </div>
+                            <p class="quote__text">A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element.</p>
+                            <cite>Author name</cite>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/src/img/gradient.svg')">
         <div class="container">
             <div class="about__wrapper">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/gradient.svg" alt="" class="about__background">
-                <div class="about__container">
-                    <h1 class="about__title">need to help?</h1>
+                <div class="about__box">
+                    <h2 class="about__title h1">need to help?</h2>
                     <div class="about__column">
                         <div class="about__column-item">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/guard.svg" alt="" class="about__column-icon">
@@ -116,6 +161,8 @@ Template name: Front Home
             </div>
         </div>
     </section>
+
+
 
 </main>
 <?php get_footer('front'); ?>

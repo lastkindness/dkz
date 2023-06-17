@@ -1,27 +1,31 @@
 .about {
-    .container {
-        padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 120px;
+    padding: 20px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
     }
-    &__backgroud {
+    &__background {
         width: 100vw;
     }
     &__title {
-        margin-top: 13px;
+        margin: 0;
     }
-    &__container {
-        height: 108px;
-        width: 1200px;
-        padding: 26px 20px 10px 0;
+    &__box {
+        width: 1173px;
+        padding: 18px 20px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        position: absolute;
-        bottom: 152px;
-        margin: 0 360px 5px 360px;
+        bottom: 156px;
         background: linear-gradient(270deg, rgba(0, 0, 0, 0.42) 50%, rgba(30, 30, 30, 0) 94.97%);
         backdrop-filter: blur(10px);
         border-radius: 20px;
+        margin: 0 auto;
     }
     &__column {
         display: flex;
@@ -44,7 +48,6 @@
         }
     }
     &__btn {
-        margin-bottom: 13px;
         padding: 18px 46px;
     }
 }

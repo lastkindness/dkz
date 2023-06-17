@@ -9,30 +9,30 @@
     z-index: 50;
     align-items: center;
     justify-content: space-between;
-    background: $backgroundcolor;
+    background: transparent;
     &__logo {
-        &.logo {
-            height: 35px;
-            width: 232px;
+        height: 35px;
+        width: 232px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        &:after {
+            display: none;
         }
     }
     &__btn {
         display: flex;
         justify-content: center;
-        width: 197px;
+        &:after {
+            display: none;
+        }
     }
     &__wrapper {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        min-width: 1860px;
-        padding: 28px 180px;
-    }
-    a.link {
-        &:hover {
-            border-bottom: none;
-        }
+        padding: 28px 0;
     }
     &__search {
         position: absolute;

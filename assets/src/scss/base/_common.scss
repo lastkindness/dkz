@@ -19,6 +19,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow: visible;
+    background-position: 50% 0;
     &.nav-active {
         .navbar__nav {
             opacity: 1;
@@ -40,8 +41,7 @@ a {
     @include animate(color);
 }
 
-.btn {
-    @include animate(background color);
+.btn, a.btn, button.btn {
     font-family: "Monument Extended";
     display: inline-block;
     font-size: 14px;
@@ -56,18 +56,20 @@ a {
     min-width: 140px;
     letter-spacing: 0.02em;
     border-radius: 8px;
+    border: 1px solid $btncolor;
+    @include animate(all);
     &:hover {
-        background: #1A1A1F;
-        border: 1px solid #5D5E71;
+        background: $btnbackgroundcolor;
+        border: 1px solid $greytwocolor;
         border-radius: 8px;
         color: $btncolor;
     }
 }
 
 .container {
-    // max-width: 1270px;
-    // margin: 0 auto;
-    padding: 0 15px;
+    max-width: 1530px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 main {
@@ -79,31 +81,6 @@ button {
     border: none;
     outline: none;
 }
-
-h1 {
-    /*@include media(">=tablet") {
-        font-size: 40px;
-    }*/
-}
-
-h2 {
-    /*@include media(">=tablet") {
-        font-size: 32px;
-    }*/
-}
-
-h3 {
-    /*@include media(">=tablet") {
-        font-size: 28px;
-    }*/
-}
-
-h4 {
-    /*@include media(">=tablet") {
-        font-size: 24px;
-    }*/
-}
-
 
 
 main {
@@ -268,7 +245,9 @@ input[type="radio"] {
     margin-right: 15px;
     position: relative;
     z-index: 1;
-
+    &::placeholder {
+        color: $greytwocolor;
+    }
     &:before {
         @include animate(transform);
 

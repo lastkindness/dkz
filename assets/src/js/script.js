@@ -19,3 +19,8 @@ import tabs_block from '../../../acf-blocks/tabs/js/app.js';
 import team_block from '../../../acf-blocks/team/js/app.js';
 import twocolumns_block from '../../../acf-blocks/two-columns/js/app.js';
 import video_block from '../../../acf-blocks/video/js/app.js';
+
+
+$(document).ready(() => {
+    quote_block();
+});

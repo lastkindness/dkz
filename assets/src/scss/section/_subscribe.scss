@@ -1,5 +1,5 @@
 .subscribe {
-    /*background: $backgroundcolor;*/
+    margin-bottom: 120px;
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -42,7 +42,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
+        &:after {
+            display: none;
+        }
         .icon-Subtract {
             font-size: 22px;
         }
@@ -65,9 +67,10 @@
             border-bottom: none;
             cursor: pointer;
             background: $backgroundcolor;
-
-            &.icon {
-                color: $white;
+            .icon {
+                &:before {
+                    color: $white;
+                }
             }
         }
     }

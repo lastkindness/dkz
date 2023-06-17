@@ -10,6 +10,12 @@ $breakpoints: (
 @import '~slick-carousel/slick/slick.scss';
 @import '~handorgel/src/scss/style';
 
+@import '~swiper/swiper';
+@import '~swiper/modules/pagination/pagination';
+@import '~swiper/modules/navigation/navigation';
+@import '~swiper/modules/grid/grid';
+@import '~swiper/modules/effect-fade/effect-fade';
+
 @import 'base/include-media';
 @import 'base/variables';
 @import 'base/mixins';
@@ -23,6 +29,8 @@ $breakpoints: (
 
 @import "section/hero";
 @import "section/about";
+@import "section/helicopter";
+
 @import "section/subscribe";
 @import "section/about-us";
 

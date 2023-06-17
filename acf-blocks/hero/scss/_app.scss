@@ -8,17 +8,16 @@
         background-repeat: no-repeat;
         padding: 0 30px;
     }
-
-    .container {
+    /*.container {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        min-height: calc(100vh - 67px);
-
+        max-width: 1530px;
+        margin: 0 auto;
         @include media(">=desktop") {
             min-height: calc(100vh - 110px);
         }
-    }
+    }*/
 
     &__text {
         width: 100%;

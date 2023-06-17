@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php wp_head(); ?>
 </head>
-<body style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/src/img/main.jpg')"> <?php body_class(); ?>>
+<body style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/src/img/main.jpg')" <?php body_class(); ?>>
 <div id="wrapper">
     <header class="header">
         <div class="container">
                 <div class="header__wrapper">
-                <strong class="logo header__logo">
-                    <a class="link" href="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/logo.svg" width="240" alt="Logo">
-                    </a>
-                </strong>
+                <a href="#" class="logo header__logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/logo.svg" width="240" alt="Logo">
+                </a>
                 <nav class="navbar header__nav">
                     <a href="#" class="nav-opener"><span></span></a>
                     <ul class="navbar__nav">
@@ -34,7 +32,7 @@
                         <li><a href="#">CONTACTS</a></li>
                     </ul>
                 </nav>
-                <button class="btn header__btn">CONTACT US</button>
+                <a href="#" class="btn header__btn">CONTACT US</a>
             </div>
         </div>
     </header>
