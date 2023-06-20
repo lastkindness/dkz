@@ -2,6 +2,7 @@
  *  Load modules
  */
 import quoteSwiper from './modules/quoteSwiper.js';
-$(document).ready(() => {
-quoteSwiper();
-});
+
+export default () => {
+    quoteSwiper();
+};
