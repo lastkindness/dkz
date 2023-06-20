@@ -4,7 +4,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/logo.svg" alt="" class="footer__logo">
             <div class="footer__icons">
                 <a class="footer__round">
-                    <span class="footer__icon icon icon-Subtract"></span>
+                    <span class="footer__icon icon icon-messanger"></span>
                 </a>
                 <a class="footer__round">
                     <span class="footer__icon icon icon-instagram"></span>

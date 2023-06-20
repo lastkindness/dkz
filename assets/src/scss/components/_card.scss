@@ -1,0 +1,76 @@
+.card {
+    padding: 16px;
+    background: radial-gradient(99.85% 363.41% at 45.89% -17.4%, #1C1D25 0%, #0C0D0F 100%);
+    border-radius: 16px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    max-height: 339px;
+    &:after {
+        display: none;
+    }
+    img {
+        object-fit: cover;
+        object-position: center;
+        overflow: hidden;
+        height: 195px;
+        width: 100%;
+        border-radius: 8px;
+    }
+    &__title {
+        font-size: 24px;
+        color: $btncolor;
+        margin: 24px 0 0 0;
+    }
+    &__text {
+        margin-top: 12px;
+        color: $greycolor;
+        font-size: 16px;
+    }
+    &__icon {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        align-self: flex-end;
+        width: 32px;
+        height: 32px;
+        background: #1C1D25;
+        border-radius: 8px;
+        z-index: 1;
+        justify-self: end;
+        @include animate(all);
+        &:before {
+            font-family: icomoon;
+            display: block;
+            content: "\e902";
+            color: $greytwocolor;
+            font-size: 12px;
+            margin-top: 2px;
+            @include animate(all);
+        }
+        &:after {
+            display: none;
+        }
+        &-text {
+            font-family: $monument;
+            display: none;
+            margin: 0;
+            color: $iconcolor;
+            font-size: 10px;
+        }
+    }
+    &:hover {
+        .card__icon {
+            width: 151px;
+            background: radial-gradient(68.15% 53.47% at 89.84% 53.91%, #FDEEFF 0%, #B4B5CB 100%);
+            @include animate(all);
+            &:before {
+                color: $iconcolor;
+            }
+            &-text {
+                display: block;
+            }
+        }
+    }
+}

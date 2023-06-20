@@ -23,9 +23,9 @@ Template name: Front Home
                 </div>
                 <div class="hero__right">
                     <a href="#" class="hero__right-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/robot.svg" alt="" class="hero__right-img"></a>
-                    <a href="#" class="hero__right-linked">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/triangle.svg" alt="" class="hero__right-play">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/Vector.svg" alt="" class="hero__right-words">
+                    <a href="#" class="hero__right-linked watch-video-button">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/triangle.svg" alt="" class="hero__right-play watch-video-button__play">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/Vector.svg" alt="" class="hero__right-words watch-video-button__words">
                     </a>
                 </div>
 <!--                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/back.svg" alt="" class="hero__back">
@@ -46,7 +46,7 @@ Template name: Front Home
                 </div>
                 <div class="subscribe__icons">
                     <a class="subscribe__round">
-                        <span class="subscribe__icon icon icon-Subtract"></span>
+                        <span class="subscribe__icon icon icon-messanger"></span>
                     </a>
                     <a class="subscribe__round">
                         <span class="subscribe__icon icon icon-instagram"></span>
@@ -68,7 +68,7 @@ Template name: Front Home
             <div class="about-us__wrapper">
                 <div class="about-us__pictures">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/holecolor.jpg" alt="" class="about-us__pictures-item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/helicopter.jpg" alt="" class="about-us__pictures-item">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/archer.png" alt="" class="about-us__pictures-item">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/hole.jpg" alt="" class="about-us__pictures-item">
                 </div>
                 <div class="about-us__description">
@@ -100,9 +100,9 @@ Template name: Front Home
             <div class="helicopter__wrapper">
                 <div class="helicopter__text h3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/striple.svg" alt="" class="helicopter__vector">
-                <a href="#" class="helicopter__linked">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/triangle.svg" alt="" class="helicopter__linked-play">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/Vector.svg" alt="" class="helicopter__linked-words">
+                <a href="#" class="helicopter__linked watch-video-button">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/triangle.svg" alt="" class="helicopter__linked-play watch-video-button__play">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/Vector.svg" alt="" class="helicopter__linked-words watch-video-button__words">
                 </a>
             </div>
         </div>
@@ -120,8 +120,7 @@ Template name: Front Home
                                 <div class="quote__heads-title h4">Tom Hardy</div>
                                 <p class="quote__heads-text">Satisfied customer</p>
                             </div>
-                            <p class="quote__text">A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element.</p>
-                            <cite>Author name</cite>
+                            <p class="quote__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </blockquote>
                     </div>
                     <div class="swiper-slide">
@@ -132,11 +131,10 @@ Template name: Front Home
                                 <p class="quote__heads-text p">Satisfied customer</p>
                             </div>
                             <p class="quote__text">A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element. A well-known quote, contained in a blockquote element.</p>
-                            <cite>Author name</cite>
                         </blockquote>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-next "></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -161,7 +159,6 @@ Template name: Front Home
             </div>
         </div>
     </section>
-
 
 
 </main>
