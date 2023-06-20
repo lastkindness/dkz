@@ -11,18 +11,10 @@
         align-items: center;
     }
     &__linked {
-        margin-top: 625px;
-        position: absolute;
-        left: -11px;
-        &-play {
-            position: relative;
-            z-index: 2;
-            top: 45px;
-            left: 142px;
-        }
-        &-words {
-            height: 183px;
-            width: 183px;
+        margin-top: 635px;
+        left: 85px;
+        &::after {
+            display: none;
         }
     }
     &__vector {

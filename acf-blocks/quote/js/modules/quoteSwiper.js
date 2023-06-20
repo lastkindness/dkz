@@ -1,6 +1,6 @@
 import Swiper from 'swiper/swiper-bundle';
 
-$(document).ready(() => {
+export default () => {
     console.log("test");
     if (jQuery('.quote__slider').length) {
         const swiper = new Swiper(".quote__slider", {
@@ -15,4 +15,4 @@ $(document).ready(() => {
             },
         });
     }
-});
+};

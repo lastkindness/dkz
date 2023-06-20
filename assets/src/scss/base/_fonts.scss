@@ -17,8 +17,8 @@
 
 @font-face {
     font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?z9byv6');
-    src: url('../fonts/icomoon.woff?z9byv6') format('woff');
+    src:  url('../fonts/icomoon.ttf?8ogc3r');
+    src:  url('../fonts/icomoon.woff?8ogc3r#iefix') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -39,38 +39,41 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-done:before {
+.icon-check:before {
     content: "\e900";
 }
-.icon-error:before {
+.icon-alarm:before {
     content: "\e901";
 }
-.icon-facebook:before {
+.icon-arrow:before {
     content: "\e902";
 }
-.icon-instagram:before {
-    content: "\e903";
-    color: #ebebfc;
-}
-.icon-linkedin:before {
+.icon-facebook:before {
     content: "\e904";
 }
-.icon-Subtract:before {
+.icon-instagram:before {
     content: "\e905";
 }
-.icon-svg:before {
+.icon-linkedin:before {
     content: "\e906";
-    color: #5d5e71;
-}
-.icon-triangle:before {
-    content: "\e907";
-    color: #ebebfc;
-}
-.icon-trianglee:before {
-    content: "\e908";
 }
 .icon-mail:before {
-    content: "\e91d";
-    color: #5d5e71;
+    content: "\e907";
 }
+.icon-messanger:before {
+    content: "\e908";
+}
+.icon-telegram:before {
+    content: "\e909";
+}
+.icon-triangle:before {
+    content: "\e90a";
+}
+.icon-triangleradius:before {
+    content: "\e90b";
+}
+.icon-viber:before {
+    content: "\e90c";
+}
+
 

@@ -34,29 +34,14 @@
         position: absolute;
         z-index: 4;
         margin: 150px 0 0 588px;
-        &-linked {
-            position: relative;
-            top: -95px;
-            left: 115px;
-            z-index: 2;
-            &:after {
-                display: none;
-            }
-        }
         &-link {
             &:after {
                 display: none;
             }
         }
-        &-play {
-            position: relative;
-            z-index: 2;
-            top: 45px;
-            left: 142px;
-        }
-        &-words {
-            height: 183px;
-            width: 183px;
+        &-linked {
+            top: 455px;
+            left: 215px;
         }
     }
     &__back {
