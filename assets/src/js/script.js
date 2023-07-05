@@ -23,4 +23,5 @@ import video_block from '../../../acf-blocks/video/js/app.js';
 
 $(document).ready(() => {
     quote_block();
+    faqs_block();
 });

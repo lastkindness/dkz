@@ -1,7 +1,10 @@
 import handorgel from 'handorgel';
 
 
-let accordions = document.querySelectorAll('.handorgel');
+
+export default () => {
+
+    let accordions = document.querySelectorAll('.handorgel');
 
 for(let i = 0; i < accordions.length; i++) {
     let accordion = accordions[i];
@@ -10,3 +13,4 @@ for(let i = 0; i < accordions.length; i++) {
         multiSelectable: false
     })
 }
+};

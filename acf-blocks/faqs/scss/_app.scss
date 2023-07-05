@@ -1,8 +1,29 @@
 .faq {
-    padding: 50px 0;
-
-    h3 {
+    margin-top: 100px;
+    &__wrapper {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {
+        text-transform: uppercase;
+    }
+    &__descr {
+        max-width: 671px;
         text-align: center;
+        color: $white;
+    }
+    &__tab {
+        display: flex;
+    }
+    &__left {
+        width: 750px;
+        margin-right: 15px;
+    }
+    &__right {
+        width: 750px;
+        margin-left: 15px;
     }
 }
 
@@ -18,7 +39,12 @@
 
         &__button {
             position: relative;
-
+            background-color: transparent;
+            border-bottom: 1px solid $bordercolor;
+            border-top: none;
+            max-width: 750px;
+            font-size: 18px;
+            text-transform: uppercase;
             &:before {
                 @include animate(transform);
 
