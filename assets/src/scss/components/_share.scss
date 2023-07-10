@@ -1,0 +1,45 @@
+.share {
+    &__icons {
+        display: flex;
+        margin: 0 -16px;
+    }
+    &__round {
+        margin: 0 16px;
+        background: radial-gradient(68.15% 53.47% at 89.84% 53.91%, #FDEEFF 0%, #B4B5CB 100%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s all;
+        &:after {
+            display: none;
+        }
+        .icon-messanger {
+            font-size: 22px;
+        }
+        .icon-instagram {
+            font-size: 22px;
+        }
+        .icon {
+            &:before {
+                color: $iconcolor;
+            }
+        }
+        .icon-facebook {
+            font-size: 22px;
+        }
+        &:hover {
+            border-bottom: none;
+            cursor: pointer;
+            background: $backgroundcolor;
+            transition: 0.3s all;
+            .icon {
+                &:before {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
