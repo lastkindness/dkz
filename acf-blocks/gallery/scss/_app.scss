@@ -2,11 +2,9 @@
 
 .gallery {
     padding: 25px 0;
-
     h2 {
         text-align: center;
     }
-
     .row {
         @include media(">=phone") {
             display: flex;
@@ -14,7 +12,6 @@
             margin: 0 -15px;
         }
     }
-
     .col {
         padding: 0 15px 30px;
 
@@ -25,5 +22,11 @@
         @include media(">=tablet") {
             width: 25%;
         }
+    }
+    &__gallery {
+        margin: 0 0 0 64px;
+    }
+    &:nth-child(even) {
+        margin: 0 0 0 -425px;
     }
 }
