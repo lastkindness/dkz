@@ -4,7 +4,6 @@
     <title><?php echo wp_get_document_title(); ?></title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <?php wp_head(); ?>
 </head>
 <body style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/src/img/main.jpg')" <?php body_class(); ?>>

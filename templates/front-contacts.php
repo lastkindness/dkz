@@ -40,16 +40,12 @@ Template name: Front Contacts
         <div class="write-us__wrapper">
             <div class="write-us__title">Write Us</div>
             <div class="write-us__text">Leave a request and we will contact you shortly</div>
-            <div class="write-us__inputs">
-                <div class="write-us__inputs-left">
-                    <input type="text" value="Yor Name" class="write-us__inputs-input">
-                    <input type="text" value="Your Phone" class="write-us__inputs-input">
-                </div>
-                <div class="write-us__inputs-right">
-                    <input type="text" value="Yor Name" class="write-us__inputs-input">
-
-                </div>
-            </div>
+            <form class="write-us__inputs">
+                <input type="text" placeholder="Yor Name" class="write-us__inputs-input">
+                <input type="text" placeholder="Your Phone" class="write-us__inputs-input">
+                <textarea class="write-us__inputs-textarea" placeholder="messengers" name="" id="" cols="30" rows="10"></textarea>
+                <button class="write-us__inputs-button btn">send message</button>
+            </form>
         </div>
     </div>
 </section>

@@ -17,9 +17,9 @@ Template name: Front Portfolio
 </section>
 
 <section class="gallery">
-    <div class="gallery__wrapper swiper mySwiper">
+    <div class="gallery__wrapper swiper">
         <div class="gallery__gallery swiper-wrapper">
-            <div class=”swiper-slide gallery__item">
+            <div class="swiper-slide gallery__item">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/drone.jpg" class="gallery__img" alt="Image 1">
             </div>
             <div class="gallery__item swiper-slide">
@@ -39,9 +39,9 @@ Template name: Front Portfolio
 </section>
 
 <section class="gallery">
-    <div class="gallery__wrapper swiper mySwiper">
+    <div class="gallery__wrapper swiper">
         <div class="gallery__gallery swiper-wrapper">
-            <div class=”gallery__item swiper-slide">
+            <div class="gallery__item swiper-slide">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/drone.jpg" class="gallery__img" alt="Image 1">
             </div>
             <div class="gallery__item swiper-slide">
