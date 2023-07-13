@@ -1,6 +1,7 @@
 .footer {
     flex-shrink: 0;
-    background: $backgroundcolor;
+    //background: $backgroundcolor;
+    background: transparent;
     &__wrapper {
         display: flex;
         align-items: center;
@@ -10,47 +11,6 @@
     &__logo {
         width: 232px;
         height: 35px;
-    }
-    &__icons {
-        display: flex;
-        /*margin-left: 100px;*/
-    }
-    &__round {
-        margin-left: 32px;
-        background: radial-gradient(68.15% 53.47% at 89.84% 53.91%, #FDEEFF 0%, #B4B5CB 100%);
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        &:after {
-            display: none;
-        }
-        .icon-messanger {
-            font-size: 22px;
-        }
-        .icon-instagram {
-            font-size: 22px;
-        }
-        .icon {
-            &:before {
-                color: $iconcolor;
-            }
-        }
-        .icon-facebook {
-            font-size: 22px;
-        }
-        &:hover {
-            border-bottom: none;
-            cursor: pointer;
-            background: $backgroundcolor;
-            .icon {
-                &:before {
-                    color: $white;
-                }
-            }
-        }
     }
     &__text {
         margin: 0;

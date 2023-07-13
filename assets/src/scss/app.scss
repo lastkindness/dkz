@@ -1,10 +1,11 @@
 $breakpoints: (
     'xs-phone': 320px,
-    'phone': 375px,
+    'phone': 480px,
     'tablet': 768px,
     'desktop': 1024px,
     'widescreen': 1200px,
-    'widescreen-lg': 1440px
+    'widescreen-lg': 1580px,
+    'full': 1920px
 );
 
 @import '~slick-carousel/slick/slick.scss';
@@ -36,6 +37,7 @@ $breakpoints: (
 
 @import "components/watch-video-button";
 @import "components/card";
+@import "components/share";
 
 @import "section/subscribe";
 @import "section/about-us";

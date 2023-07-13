@@ -44,18 +44,18 @@ Template name: Front Home
                     <span class="subscribe__input-icon icon icon-mail"></span>
                     <button class="subscribe__input-btn btn">Subscribe</button>
                 </div>
-                <div class="subscribe__icons">
-                    <a class="subscribe__round">
-                        <span class="subscribe__icon icon icon-messanger"></span>
+                <div class="share__icons subscribe__icons">
+                    <a class="share__round subscribe__round">
+                        <span class="share__icon subscribe__icon icon icon-messanger"></span>
                     </a>
-                    <a class="subscribe__round">
-                        <span class="subscribe__icon icon icon-instagram"></span>
+                    <a class="subscribe__round share__round">
+                        <span class="share__icon subscribe__icon icon icon-instagram"></span>
                     </a>
-                    <a class="subscribe__round">
-                        <span class="subscribe__icon icon icon-facebook"></span>
+                    <a class="subscribe__round share__round">
+                        <span class="share__icon subscribe__icon icon icon-facebook"></span>
                     </a>
-                    <a class="subscribe__round">
-                        <span class="subscribe__icon icon icon-linkedin"></span>
+                    <a class="subscribe__round share__round">
+                        <span class="share__icon subscribe__icon icon icon-linkedin"></span>
                     </a>
                 </div>
             </div>

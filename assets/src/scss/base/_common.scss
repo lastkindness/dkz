@@ -16,10 +16,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     overflow: visible;
     background-position: 50% 0;
+    @include media("<full") {
+        background-size: auto;
+    }
     &.nav-active {
         .navbar__nav {
             opacity: 1;
@@ -70,6 +73,19 @@ a {
     max-width: 1530px;
     margin: 0 auto;
     width: 100%;
+    @include media("<=widescreen-lg") {
+        max-width: 1240px;
+    }
+    @include media("<=widescreen") {
+        max-width: 980px;
+    }
+    @include media("<=tablet") {
+        max-width: 100%;
+        padding: 0 32px;
+    }
+    @include media("<=phone") {
+        padding: 0 24px;
+    }
 }
 
 main {
