@@ -1,0 +1,24 @@
+.portfolio {
+    margin-top: 172px;
+    &__title {
+        text-align: center;
+    }
+    &__text {
+        max-width: 671px;
+        margin: 0 auto;
+        text-align: center;
+        color: $greycolor;
+    }
+}
+
+.gallery {
+    &__img {
+        width: 750px;
+        height: 401px;
+        object-fit: cover;
+        object-position: center;
+    }
+    &__item {
+        width: 750px;
+    }
+}

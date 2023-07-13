@@ -13,11 +13,11 @@ Template name: Front FAQ
             <div class="faq__title h1">FAQ</div>
             <div class="faq__descr">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point</div>
             <div class="faq__tab">
-                <div class="faq__left">
+                <div class="faq__left handorgel">
                     <h4 class="handorgel__header">
                         <button class="handorgel__header__button">WHO ARE YOU?</button>
                     </h4>
-                    <div class="handorgel__content" data-open>
+                    <div class="handorgel__content">
                         <div class="handorgel__content__inner">
                             <p>We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available, so no one will ever know that it was not you playing at the time. We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available</p>
                         </div>
@@ -39,11 +39,11 @@ Template name: Front FAQ
                         </div>
                     </div>
                 </div>
-                <div class="faq__right">
+                <div class="faq__right handorgel">
                     <h4 class="handorgel__header">
                         <button class="handorgel__header__button">HOW DO I MAKE AN ORDER?</button>
                     </h4>
-                    <div class="handorgel__content" data-open>
+                    <div class="handorgel__content">
                         <div class="handorgel__content__inner">
                             <p>We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available, so no one will ever know that it was not you playing at the time. We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available</p>
                         </div>

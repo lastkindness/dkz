@@ -1,5 +1,5 @@
 .faq {
-    margin-top: 100px;
+    margin: 164px 0 64px;
     &__wrapper {
         flex-direction: column;
         display: flex;
@@ -28,8 +28,13 @@
 }
 
 .handorgel {
+    border: none;
+}
+
+.handorgel {
     &__header {
         &--open {
+            background-color: transparent;
             .handorgel__header__button {
                 &:before {
                     transform: translateY(-50%) rotate(-180deg);
@@ -58,4 +63,16 @@
             }
         }
     }
+}
+
+.handorgel__header--open .handorgel__header__button {
+    background-color: transparent;
+}
+
+.handorgel__header--focus .handorgel__header__button {
+    background-color: transparent;
+}
+
+.handorgel__content--open {
+    background-color: transparent;
 }
