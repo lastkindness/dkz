@@ -1,5 +1,5 @@
 .subscribe {
-    margin-bottom: 120px;
+    margin: 45px 0 40px;
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -16,17 +16,41 @@
     &__input {
         height: 60px;
         margin-top: 45px;
+        max-width: 711px;
+        width: 100%;
+        color: $greycolor;
+        border-radius: 12px;
+        border: 1px solid $greymaxcolor;
+        position: relative;
         &-input {
-            height: 59px;
-            width: 711px;
+            height: 100%;
+            width: 100%;
             color: $greycolor;
-            border-radius: 12px;
-            border: 1px solid $greymaxcolor;
+            border: none !important;
+            padding: 10px 200px 10px 50px !important;
+            z-index: 0;
+            &::placeholder {
+                color: $greytwocolor !important;
+            }
+        }
+        &-icon {
+            position: absolute;
+            left: 20px;
+            z-index: 1;
+            transform: translateY(-50%);
+            top: 50%;
+            color: $greytwocolor;
+            font-size: 15px;
         }
         &-btn {
-            padding: 20px 56px;
+            padding: 20px 56px !important;
             position: absolute;
-            right: 30%;
+            right: 0;
+            z-index: 2;
+            top: 50%;
+            min-width: 218px !important;
+            text-transform: uppercase;
+            transform: translateY(-50%);
         }
     }
 }

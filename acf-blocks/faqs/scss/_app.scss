@@ -6,25 +6,6 @@
         align-items: center;
         justify-content: center;
     }
-    &__title {
-        text-transform: uppercase;
-    }
-    &__descr {
-        max-width: 671px;
-        text-align: center;
-        color: $white;
-    }
-    &__tab {
-        display: flex;
-    }
-    &__left {
-        width: 750px;
-        margin-right: 15px;
-    }
-    &__right {
-        width: 750px;
-        margin-left: 15px;
-    }
 }
 
 .handorgel {
@@ -41,7 +22,6 @@
                 }
             }
         }
-
         &__button {
             position: relative;
             background-color: transparent;
@@ -52,7 +32,6 @@
             text-transform: uppercase;
             &:before {
                 @include animate(transform);
-
                 content: "\e903";
                 font-family: "icomoon";
                 font-size: 20px;

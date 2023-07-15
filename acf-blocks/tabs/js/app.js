@@ -3,6 +3,6 @@
  */
 import tabs from './modules/tabs.js';
 
-// $(document).ready(() => {
-//
-// });
+export default () => {
+    tabs();
+};

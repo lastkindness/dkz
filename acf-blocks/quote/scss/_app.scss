@@ -67,9 +67,12 @@
         @include media(">=tablet") {
             display: flex;
         }
-
         @include media(">=desktop") {
             left: 200px;
+        }
+        &:hover {
+            background: $backgroundcolor;
+            transition: 0.3s all;
         }
     }
     .swiper-button-prev {

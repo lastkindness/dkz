@@ -3,7 +3,7 @@
  */
 import heroSwiper from './modules/heroSwiper.js';
 
-// $(document).ready(() => {
-//
-// });
+export default () => {
+    heroSwiper();
+};
 

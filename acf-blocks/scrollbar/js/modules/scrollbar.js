@@ -1,4 +1,6 @@
-jQuery(document).ready(() => {
+import customScrollbar from 'malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js';
+
+export default () => {
     jQuery('.scrollbar-x').mCustomScrollbar({
         axis: "x",
         theme: "inset-dark",
@@ -14,4 +16,4 @@ jQuery(document).ready(() => {
             enable: true
         }
     });
-});
+};

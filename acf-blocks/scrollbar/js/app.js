@@ -3,6 +3,6 @@
  */
 import scrollbar from './modules/scrollbar.js';
 
-// $(document).ready(() => {
-//
-// });
+export default () => {
+    scrollbar();
+};

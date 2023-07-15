@@ -1,7 +1,7 @@
 import GLightbox from 'glightbox';
 
-document.addEventListener('DOMContentLoaded', function () {
+export default () => {
     const lightbox = GLightbox({
         selector: '.glightbox'
     });
-});
+};

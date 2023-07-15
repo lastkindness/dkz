@@ -12,9 +12,9 @@ Template name: Front Services
         <div class="heading__wrapper">
             <h1 class="heading__title">Our Services</h1>
             <p class="heading__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point</p>
-            <a href="#" class="heading__linked watch-video-button">
+            <a href="#" data-video='{"type": "html5", "video": "<?php echo get_template_directory_uri(); ?>/acf-blocks/video/img/file_example_MP4_480_1_5MG.mp4", "fluidWidth": true}' class="heading__linked watch-video-button">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/triangle.svg" alt="" class="heading__linked-play watch-video-button__play">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/Vector.svg" alt="" class="heading__linked-words watch-video-button__words">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/Vector.svg" alt="" class="heading__linked-words watch-video-button__words curved-img">
             </a>
         </div>
     </div>

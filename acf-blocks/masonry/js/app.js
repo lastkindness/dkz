@@ -3,6 +3,6 @@
  */
 import masonry from './modules/masonry.js';
 
-// $(document).ready(() => {
-//
-// });
+export default () => {
+    masonry();
+};

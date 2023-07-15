@@ -1,6 +1,6 @@
 import Swiper from 'swiper/swiper-bundle';
 
-$(document).ready(() => {
+export default () => {
     if (jQuery('.hero__slider').length) {
         const swiper = new Swiper(".hero__slider", {
             loop: true,
@@ -14,4 +14,4 @@ $(document).ready(() => {
             },
         });
     }
-});
+};

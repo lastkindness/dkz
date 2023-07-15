@@ -3,6 +3,7 @@
  */
 import counter from './modules/counter.js';
 
-// $(document).ready(() => {
-//
-// });
+export default () => {
+    counter();
+};
+

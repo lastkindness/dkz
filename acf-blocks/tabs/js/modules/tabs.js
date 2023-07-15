@@ -1,4 +1,4 @@
-jQuery(document).ready(() => {
+export default () => {
     jQuery('.tabs__nav').on('click', 'li:not(.active)', function () {
         jQuery(this)
             .addClass('active')
@@ -10,4 +10,4 @@ jQuery(document).ready(() => {
             .eq($(this).index())
             .addClass('active');
     });
-});
+};

@@ -1,10 +1,10 @@
 .hero {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /*background: $backgroundcolor;*/
+    padding: 0 0 180px;
     &__wrapper {
         display: flex;
     }
@@ -43,6 +43,13 @@
             top: 455px;
             left: 215px;
         }
+        &-absolute {
+            position: absolute;
+            top: -55px;
+            left: 55px;
+            transform: translatey(0px);
+            animation: float 6s ease-in-out infinite;
+        }
     }
     &__back {
         height: 695px;
@@ -61,6 +68,18 @@
         top: -30px;
         left: -1180px;
         z-index: 6;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
     }
 }
 

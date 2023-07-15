@@ -1,4 +1,4 @@
-jQuery(document).ready(() => {
+export default () => {
     if (jQuery(window).width() > 1024) {
         var parallax = -0.5;
 
@@ -16,4 +16,4 @@ jQuery(document).ready(() => {
             });
         });
     }
-});
+};

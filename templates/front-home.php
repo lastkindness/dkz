@@ -22,14 +22,15 @@ Template name: Front Home
                     <button class="hero__left-btn btn">GET STARTED</button>
                 </div>
                 <div class="hero__right">
-                    <a href="#" class="hero__right-link"><img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/robot.svg" alt="" class="hero__right-img"></a>
-                    <a href="#" class="hero__right-linked watch-video-button">
+                    <div href="#" class="hero__right-link">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/image141.png" alt="" class="hero__right-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/Group47885.png" alt="" class="hero__right-absolute">
+                    </div>
+                    <a data-video='{"type": "html5", "video": "<?php echo get_template_directory_uri(); ?>/acf-blocks/video/img/file_example_MP4_480_1_5MG.mp4", "fluidWidth": true}' href="#" class="hero__right-linked watch-video-button">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/triangle.svg" alt="" class="hero__right-play watch-video-button__play">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/Vector.svg" alt="" class="hero__right-words watch-video-button__words">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/Vector.svg" alt="" class="hero__right-words watch-video-button__words curved-img">
                     </a>
                 </div>
-<!--                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/back.svg" alt="" class="hero__back">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/background.svg" alt="" class="hero__background">-->
             </div>
         </div>
     </section>
@@ -37,27 +38,32 @@ Template name: Front Home
     <section class="subscribe">
         <div class="container">
             <div class="subscribe__wrapper">
-                <h1 class="subscribe__title">Subscribe to our news</h1>
+                <h2 class="subscribe__title">Subscribe to our news</h2>
                 <div class="subscribe__subtitle h4">Stay up to date on the latest marketing ideas!</div>
-                <div class="subscribe__input">
+                <form class="subscribe__input">
                     <input placeholder="Write your email here" type="text" class="subscribe__input-input">
                     <span class="subscribe__input-icon icon icon-mail"></span>
                     <button class="subscribe__input-btn btn">Subscribe</button>
-                </div>
-                <div class="share__icons subscribe__icons">
-                    <a class="share__round subscribe__round">
-                        <span class="share__icon subscribe__icon icon icon-messanger"></span>
-                    </a>
-                    <a class="subscribe__round share__round">
-                        <span class="share__icon subscribe__icon icon icon-instagram"></span>
-                    </a>
-                    <a class="subscribe__round share__round">
-                        <span class="share__icon subscribe__icon icon icon-facebook"></span>
-                    </a>
-                    <a class="subscribe__round share__round">
-                        <span class="share__icon subscribe__icon icon icon-linkedin"></span>
-                    </a>
-                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="share">
+        <div class="container">
+            <div class="share__icons">
+                <a class="share__round subscribe__round">
+                    <span class="share__icon subscribe__icon icon icon-messanger"></span>
+                </a>
+                <a class="subscribe__round share__round">
+                    <span class="share__icon subscribe__icon icon icon-instagram"></span>
+                </a>
+                <a class="subscribe__round share__round">
+                    <span class="share__icon subscribe__icon icon icon-facebook"></span>
+                </a>
+                <a class="subscribe__round share__round">
+                    <span class="share__icon subscribe__icon icon icon-linkedin"></span>
+                </a>
             </div>
         </div>
     </section>
@@ -100,9 +106,9 @@ Template name: Front Home
             <div class="helicopter__wrapper">
                 <div class="helicopter__text h3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/striple.svg" alt="" class="helicopter__vector">
-                <a href="#" class="helicopter__linked watch-video-button">
+                <a href="#" data-video='{"type": "html5", "video": "<?php echo get_template_directory_uri(); ?>/acf-blocks/video/img/file_example_MP4_480_1_5MG.mp4", "fluidWidth": true}' class="helicopter__linked watch-video-button">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/triangle.svg" alt="" class="helicopter__linked-play watch-video-button__play">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/Vector.svg" alt="" class="helicopter__linked-words watch-video-button__words">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/Vector.svg" alt="" class="helicopter__linked-words watch-video-button__words curved-img">
                 </a>
             </div>
         </div>
@@ -113,7 +119,7 @@ Template name: Front Home
             <h2 class="quote__heading">reviews</h2>
             <div class="quote__slider swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide quote__slider">
+                    <div class="swiper-slide">
                         <blockquote class="blockquote">
                             <div class="quote__heads">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/avatar.jpg" alt="" class="quote__heads-img">

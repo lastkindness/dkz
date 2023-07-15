@@ -3,6 +3,6 @@
  */
 import parallax from './modules/parallax.js';
 
-// $(document).ready(() => {
-//
-// });
+export default () => {
+    parallax();
+};

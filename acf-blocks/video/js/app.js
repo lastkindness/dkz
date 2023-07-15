@@ -3,6 +3,6 @@
  */
 import video from './modules/video.js';
 
-// $(document).ready(() => {
-//
-// });
+export default () => {
+    video();
+};

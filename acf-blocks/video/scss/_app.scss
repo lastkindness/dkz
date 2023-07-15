@@ -126,6 +126,8 @@
     width: 30px;
     background: #fff;
     transform: translate(-50%, -50%) rotate(45deg);
+    -webkit-transform-origin: unset;
+    transform-origin: unset;
 }
 
 .js-video-popup .close:before {

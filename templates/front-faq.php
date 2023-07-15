@@ -7,62 +7,75 @@ Template name: Front FAQ
 */ ?>
 <?php get_header('front'); ?>
 
+<section class="heading">
+    <div class="container">
+        <div class="heading__wrapper">
+            <h1 class="heading__title">Our FAQ</h1>
+            <p class="heading__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point</p>
+        </div>
+    </div>
+</section>
+
 <section class="faq">
     <div class="container">
         <div class="faq__wrapper">
-            <div class="faq__title h1">FAQ</div>
-            <div class="faq__descr">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point</div>
-            <div class="faq__tab">
-                <div class="faq__left handorgel">
-                    <h4 class="handorgel__header">
-                        <button class="handorgel__header__button">WHO ARE YOU?</button>
-                    </h4>
-                    <div class="handorgel__content">
-                        <div class="handorgel__content__inner">
-                            <p>We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available, so no one will ever know that it was not you playing at the time. We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available</p>
-                        </div>
-                    </div>
-                    <h4 class="handorgel__header">
-                        <button class="handorgel__header__button">HOW THIS SITE WORKS?</button>
-                    </h4>
-                    <div class="handorgel__content">
-                        <div class="handorgel__content__inner">
-                            <p>We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available, so no one will ever know that it was not you playing at the time. We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available</p>
-                        </div>
-                    </div>
-                    <h4 class="handorgel__header">
-                        <button class="handorgel__header__button">WHAT IF YOU DON'T HAVE SERVICE I WANT?</button>
-                    </h4>
-                    <div class="handorgel__content">
-                        <div class="handorgel__content__inner">
-                            <p>We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available, so no one will ever know that it was not you playing at the time. We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available</p>
-                        </div>
+            <div class="faq__item">
+                <h4 class="handorgel__header">
+                    <button class="handorgel__header__button">WHO ARE YOU?</button>
+                </h4>
+                <div class="handorgel__content">
+                    <div class="handorgel__content__inner">
+                        <p>We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available, so no one will ever know that it was not you playing at the time. We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available</p>
                     </div>
                 </div>
-                <div class="faq__right handorgel">
-                    <h4 class="handorgel__header">
-                        <button class="handorgel__header__button">HOW DO I MAKE AN ORDER?</button>
-                    </h4>
-                    <div class="handorgel__content">
-                        <div class="handorgel__content__inner">
-                            <p>We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available, so no one will ever know that it was not you playing at the time. We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available</p>
-                        </div>
+            </div>
+            <div class="faq__item">
+                <h4 class="handorgel__header">
+                    <button class="handorgel__header__button">HOW THIS SITE WORKS?</button>
+                </h4>
+                <div class="handorgel__content">
+                    <div class="handorgel__content__inner">
+                        <p>We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available, so no one will ever know that it was not you playing at the time. We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available</p>
                     </div>
-                    <h4 class="handorgel__header">
-                        <button class="handorgel__header__button">HOW CAN I TRUST MY MONEY TO YOU?</button>
-                    </h4>
-                    <div class="handorgel__content">
-                        <div class="handorgel__content__inner">
-                            <p>We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available, so no one will ever know that it was not you playing at the time. We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available</p>
-                        </div>
+                </div>
+            </div>
+            <div class="faq__item">
+                <h4 class="handorgel__header">
+                    <button class="handorgel__header__button">WHAT IF YOU DON'T HAVE SERVICE I WANT?</button>
+                </h4>
+                <div class="handorgel__content">
+                    <div class="handorgel__content__inner">
+                        <p>We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available, so no one will ever know that it was not you playing at the time. We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available</p>
                     </div>
-                    <h4 class="handorgel__header">
-                        <button class="handorgel__header__button">WHY SO EXPENSIVE?</button>
-                    </h4>
-                    <div class="handorgel__content">
-                        <div class="handorgel__content__inner">
-                            <p>We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available, so no one will ever know that it was not you playing at the time. We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available</p>
-                        </div>
+                </div>
+            </div>
+            <div class="faq__item">
+                <h4 class="handorgel__header">
+                    <button class="handorgel__header__button">HOW DO I MAKE AN ORDER?</button>
+                </h4>
+                <div class="handorgel__content">
+                    <div class="handorgel__content__inner">
+                        <p>We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available, so no one will ever know that it was not you playing at the time. We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq__item">
+                <h4 class="handorgel__header">
+                    <button class="handorgel__header__button">HOW CAN I TRUST MY MONEY TO YOU?</button>
+                </h4>
+                <div class="handorgel__content">
+                    <div class="handorgel__content__inner">
+                        <p>We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available, so no one will ever know that it was not you playing at the time. We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq__item">
+                <h4 class="handorgel__header">
+                    <button class="handorgel__header__button">WHY SO EXPENSIVE?</button>
+                </h4>
+                <div class="handorgel__content">
+                    <div class="handorgel__content__inner">
+                        <p>We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available, so no one will ever know that it was not you playing at the time. We can guarantee that our players will not use any kind of cheats, hacks, exploits or any other kind of 3rd party software, only personal skill. If you choose a piloted version of the boost we will use the best VPN services available</p>
                     </div>
                 </div>
             </div>

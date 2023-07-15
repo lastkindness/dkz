@@ -3,6 +3,6 @@
  */
 import fancybox from './modules/fancybox.js';
 
-// $(document).ready(() => {
-//
-// });
+export default () => {
+    fancybox();
+};
