@@ -13,7 +13,7 @@ Template name: Front Contacts
             <div class="contacts__title h1">Contacts</div>
             <div class="contacts__contacts">
                 <div class="contacts__contacts-left">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/map.jpg" alt="" class="contacts__contacts-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40702.90290108419!2d-74.02733513620187!3d40.69024121836729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1689408668365!5m2!1sru!2sua" width="784" height="442" style="border:16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="contacts__contacts-right">
                     <div class="contacts__contacts-title">phone:</div>
