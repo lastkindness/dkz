@@ -1,0 +1,48 @@
+.contacts {
+    margin: 200px 0 116px;
+    &__title {
+        position: absolute;
+        z-index: 1;
+        top: 160px;
+    }
+    &__contacts {
+        display: flex;
+        align-items: center;
+        &-title {
+            color: $white;
+            font-size: 18px;
+        }
+        &-left {
+            position: relative;
+            margin:0 68px 0 100px;
+            z-index: 0;
+        }
+        &-map {
+            border-radius: 16px;
+        }
+        &-messengers {
+            display: flex;
+        }
+        &-round {
+            &.share__round {
+                margin: 0 14px 0 0;
+            }
+        }
+        &-icon {
+            &.icon-viber {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+
+/*.write-us {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1270px;
+    margin: 0 auto;
+    height: 362px;
+    padding: 27px 48px 62px;
+}*/
