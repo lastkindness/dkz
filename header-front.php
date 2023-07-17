@@ -32,7 +32,7 @@
                         <li><a href="#">CONTACTS</a></li>
                     </ul>
                 </nav>
-                <a href="#" class="btn header__btn">CONTACT US</a>
+                <a data-popup="hidden-content" href="#" class="btn header__btn">CONTACT US</a>
             </div>
         </div>
     </header>

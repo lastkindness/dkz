@@ -41,9 +41,18 @@ Template name: Front Contacts
             <div class="write-us__title">Write Us</div>
             <div class="write-us__text">Leave a request and we will contact you shortly</div>
             <form class="write-us__inputs">
-                <input type="text" placeholder="Yor Name" class="write-us__inputs-input">
-                <input type="text" placeholder="Your Phone" class="write-us__inputs-input">
-                <textarea class="write-us__inputs-textarea" placeholder="messengers" name="" id="" cols="30" rows="10"></textarea>
+                <div class="write-us__item">
+                    <h6 class="write-us__heading">Yor Name</h6>
+                    <input type="text" placeholder="Write your email here" class="write-us__inputs-input">
+                </div>
+                <div class="write-us__item">
+                    <h6 class="write-us__heading">Yor Phone</h6>
+                    <input type="text" placeholder="Write your email here" class="write-us__inputs-input">
+                </div>
+                <div class="write-us__item">
+                    <h6 class="write-us__heading">Messengers</h6>
+                    <textarea class="write-us__inputs-textarea" placeholder="Write your email here" name="" id=""></textarea>
+                </div>
                 <button class="write-us__inputs-button btn">send message</button>
             </form>
         </div>

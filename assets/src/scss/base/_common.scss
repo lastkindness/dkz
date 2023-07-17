@@ -29,6 +29,12 @@ body {
             visibility: visible;
         }
     }
+    &.scroll {
+        .header {
+            background-color: transparentize($greymaxcolor, 0.4);
+            transition: 0.3s all;
+        }
+    }
 }
 
 #wrapper {

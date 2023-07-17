@@ -23,7 +23,7 @@
         margin: 24px 0 0 0;
     }
     &__text {
-        margin-top: 12px;
+        margin: 12px 0;
         color: $greycolor;
         font-size: 16px;
     }
@@ -33,12 +33,13 @@
         justify-content: space-around;
         align-items: center;
         align-self: flex-end;
-        width: 32px;
+        width: 151px;
         height: 32px;
         background: #1C1D25;
         border-radius: 8px;
         z-index: 1;
         justify-self: end;
+        opacity: 0;
         @include animate(all);
         &:before {
             font-family: icomoon;
@@ -62,7 +63,7 @@
     }
     &:hover {
         .card__icon {
-            width: 151px;
+            opacity: 1;
             background: radial-gradient(68.15% 53.47% at 89.84% 53.91%, #FDEEFF 0%, #B4B5CB 100%);
             @include animate(all);
             &:before {

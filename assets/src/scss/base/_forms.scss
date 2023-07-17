@@ -33,8 +33,9 @@ select {
 }
 
 textarea {
-	resize: vertical;
 	vertical-align: top;
+    resize: none;
+    height: 184px;
 }
 
 button,

@@ -76,30 +76,28 @@ a {
     text-decoration: none;
     position: relative;
     display: inline-block;
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -.275em;
+        left: 0;
+        right: 0;
+        transition: -webkit-transform .75s cubic-bezier(.19,1,.22,1);
+        /*transition: transform .75s cubic-bezier(.19,1,.22,1);*/
+        transition: transform .75s cubic-bezier(.19,1,.22,1),-webkit-transform .75s cubic-bezier(.19,1,.22,1);
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: right;
+        transform-origin: right;
+        border-bottom: 1px solid $white;
+    }
     &:hover {
         &:after {
             -webkit-transform-origin: left;
             transform-origin: left;
             -webkit-transform: scaleX(1);
             transform: scaleX(1);
-        }
-    }
-    &:not(.close) {
-        &:after {
-            content: "";
-            display: block;
-            position: absolute;
-            bottom: -.275em;
-            left: 0;
-            right: 0;
-            transition: -webkit-transform .75s cubic-bezier(.19,1,.22,1);
-            /*transition: transform .75s cubic-bezier(.19,1,.22,1);*/
-            transition: transform .75s cubic-bezier(.19,1,.22,1),-webkit-transform .75s cubic-bezier(.19,1,.22,1);
-            -webkit-transform: scaleX(0);
-            transform: scaleX(0);
-            -webkit-transform-origin: right;
-            transform-origin: right;
-            border-bottom: 1px solid $white;
         }
     }
 }

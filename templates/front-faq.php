@@ -19,7 +19,7 @@ Template name: Front FAQ
 <section class="faq">
     <div class="container">
         <div class="faq__wrapper">
-            <div class="faq__item">
+            <div class="faq__item handorgel">
                 <h4 class="handorgel__header">
                     <button class="handorgel__header__button">WHO ARE YOU?</button>
                 </h4>
@@ -29,7 +29,7 @@ Template name: Front FAQ
                     </div>
                 </div>
             </div>
-            <div class="faq__item">
+            <div class="faq__item handorgel">
                 <h4 class="handorgel__header">
                     <button class="handorgel__header__button">HOW THIS SITE WORKS?</button>
                 </h4>
@@ -39,7 +39,7 @@ Template name: Front FAQ
                     </div>
                 </div>
             </div>
-            <div class="faq__item">
+            <div class="faq__item handorgel">
                 <h4 class="handorgel__header">
                     <button class="handorgel__header__button">WHAT IF YOU DON'T HAVE SERVICE I WANT?</button>
                 </h4>
@@ -49,7 +49,7 @@ Template name: Front FAQ
                     </div>
                 </div>
             </div>
-            <div class="faq__item">
+            <div class="faq__item handorgel">
                 <h4 class="handorgel__header">
                     <button class="handorgel__header__button">HOW DO I MAKE AN ORDER?</button>
                 </h4>
@@ -59,7 +59,7 @@ Template name: Front FAQ
                     </div>
                 </div>
             </div>
-            <div class="faq__item">
+            <div class="faq__item handorgel">
                 <h4 class="handorgel__header">
                     <button class="handorgel__header__button">HOW CAN I TRUST MY MONEY TO YOU?</button>
                 </h4>
@@ -69,7 +69,7 @@ Template name: Front FAQ
                     </div>
                 </div>
             </div>
-            <div class="faq__item">
+            <div class="faq__item handorgel">
                 <h4 class="handorgel__header">
                     <button class="handorgel__header__button">WHY SO EXPENSIVE?</button>
                 </h4>

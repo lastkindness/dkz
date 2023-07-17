@@ -1,10 +1,13 @@
 .faq {
     margin: 164px 0 64px;
     &__wrapper {
-        flex-direction: column;
+        flex-wrap: wrap;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__item {
+        width: calc(50% - 30px);
     }
 }
 
@@ -18,7 +21,7 @@
             background-color: transparent;
             .handorgel__header__button {
                 &:before {
-                    transform: translateY(-50%) rotate(-180deg);
+                    transform: translateY(-50%) rotate(90deg);
                 }
             }
         }
@@ -30,15 +33,29 @@
             max-width: 750px;
             font-size: 18px;
             text-transform: uppercase;
-            &:before {
-                @include animate(transform);
-                content: "\e903";
-                font-family: "icomoon";
-                font-size: 20px;
+            position: relative;
+            padding: 20px 36px 20px 14px;
+            &:before,
+            &:after {
+                content: '';
                 position: absolute;
+                background: $white;
+                -webkit-transition: 400ms all ease-out;
+                transition: 400ms all ease-out;
+            }
+            &:before {
                 top: 50%;
-                right: 15px;
-                transform: translateY(-50%);
+                right: 17px;
+                height: 20px;
+                width: 2px;
+                transform: translateY(-50%) rotate(0deg);
+            }
+            &:after {
+                top: 50%;
+                right: 8px;
+                height: 2px;
+                width: 20px;
+                transform: translateY(-50%) rotate(180deg);
             }
         }
     }
