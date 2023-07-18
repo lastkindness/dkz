@@ -1,0 +1,50 @@
+.about-us-page {
+    padding: 171px 0 102px;
+    &__wrapper {
+        display: flex;
+    }
+    &__descr {
+        margin-left: 24%;
+        &-title {
+            left: auto;
+        }
+        &-text {
+            max-width: 1010px;
+        }
+    }
+    &__navigation {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 266px;
+        &-link {
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 14px;
+        }
+    }
+}
+
+.banner {
+    &__wrapper {
+        position: relative;
+        &::after {
+            display: block;
+            content: "";
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            background-position: center;
+            background-image: radial-gradient(circle at top right, transparentize($btnbackgroundcolor, 0.5), transparentize($bordercolor, 0.7), transparentize($btnbackgroundcolor, 0.5));
+            background-size: cover;
+            z-index: 10;
+        }
+    }
+    &__img {
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+    }
+}

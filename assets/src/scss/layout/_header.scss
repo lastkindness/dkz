@@ -23,6 +23,9 @@
     &__btn {
         display: flex;
         justify-content: center;
+        &.btn {
+            padding: 16px 22px;
+        }
         &:after {
             display: none;
         }

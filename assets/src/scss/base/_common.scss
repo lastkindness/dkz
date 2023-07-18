@@ -266,9 +266,6 @@ input[type="radio"] {
     margin-right: 15px;
     position: relative;
     z-index: 1;
-    &::placeholder {
-        color: $greytwocolor;
-    }
     &:before {
         @include animate(transform);
 
