@@ -51,6 +51,8 @@
 }
 .icon-burger:before {
     content: "\e903";
+    color: $white;
+    font-size: 22px;
 }
 .icon-done:before {
     content: "\e904";

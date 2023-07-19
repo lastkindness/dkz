@@ -62,7 +62,7 @@ a {
     padding: 18px 24px;
     color: $black;
     background: $btncolor;
-    min-width: 140px;
+    min-width: 175px;
     letter-spacing: 0.02em;
     border-radius: 8px;
     border: 1px solid $btncolor;
@@ -72,6 +72,11 @@ a {
         border: 1px solid $greytwocolor;
         border-radius: 8px;
         color: $btncolor;
+    }
+    @include media("<=desktop") {
+        padding: 12px 28px;
+        font-size: 12px;
+        max-width: 140px;
     }
 }
 
