@@ -62,7 +62,7 @@ a {
     padding: 18px 24px;
     color: $black;
     background: $btncolor;
-    min-width: 140px;
+    min-width: 175px;
     letter-spacing: 0.02em;
     border-radius: 8px;
     border: 1px solid $btncolor;
@@ -72,6 +72,11 @@ a {
         border: 1px solid $greytwocolor;
         border-radius: 8px;
         color: $btncolor;
+    }
+    @include media("<=desktop") {
+        padding: 12px 28px;
+        font-size: 12px;
+        max-width: 140px;
     }
 }
 
@@ -259,7 +264,6 @@ input[type="radio"] {
     vertical-align: top;
     width: 24px;
     height: 24px;
-    border: 2px solid $black;
     border-radius: 0;
     -webkit-tap-highlight-color: transparent;
     flex-shrink: 0;
@@ -267,9 +271,6 @@ input[type="radio"] {
     margin-right: 15px;
     position: relative;
     z-index: 1;
-    &::placeholder {
-        color: $greytwocolor;
-    }
     &:before {
         @include animate(transform);
 

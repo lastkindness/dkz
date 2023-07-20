@@ -1,0 +1,23 @@
+.what-we {
+    margin: 64px 0 156px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        width: 39%;
+        margin-left: 10%;
+        &-title {
+            margin-bottom: 42px;
+        }
+        &-btn {
+            margin-top: 14px;
+            &.btn {
+                padding: 20px 56px;
+            }
+        }
+    }
+    &__right {
+        width: 47%;
+    }
+}

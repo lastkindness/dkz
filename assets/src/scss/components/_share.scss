@@ -1,5 +1,5 @@
 .share {
-    margin: 0 40px;
+    margin: 32px 0 40px;
     &__icons {
         display: flex;
         margin: 0 -16px;
@@ -16,22 +16,21 @@
         align-items: center;
         justify-content: center;
         transition: 0.3s all;
+        @include media("<=desktop") {
+            width: 30px;
+            height: 30px;
+        }
         &:after {
             display: none;
         }
-        .icon-messanger {
-            font-size: 22px;
-        }
-        .icon-instagram {
-            font-size: 22px;
-        }
         .icon {
+            font-size: 22px;
             &:before {
                 color: $iconcolor;
             }
-        }
-        .icon-facebook {
-            font-size: 22px;
+            @include media("<=desktop") {
+                font-size: 16px;
+            }
         }
         &:hover {
             border-bottom: none;

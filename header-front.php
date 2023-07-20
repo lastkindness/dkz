@@ -15,7 +15,11 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/logo.svg" width="240" alt="Logo">
                 </a>
                 <nav class="navbar header__nav">
-                    <a href="#" class="nav-opener"><span></span></a>
+                    <div class="nav-opener">
+                        <div class="icon icon-burger">
+                            <span></span>
+                        </div>
+                    </div>
                     <ul class="navbar__nav">
                         <li><a href="#" class="current_page_item">SERVICES</a></li>
                         <li>
@@ -30,6 +34,7 @@
                         <li><a href="#">ABOUT US</a></li>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">CONTACTS</a></li>
+                        <li><a data-popup="hidden-content" href="#" class="header__button btn">CONTACT US</a></li>
                     </ul>
                 </nav>
                 <a data-popup="hidden-content" href="#" class="btn header__btn">CONTACT US</a>

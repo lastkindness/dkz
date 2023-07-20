@@ -20,11 +20,11 @@ textarea {
     outline: none;
     border-radius: 12px;
     border: 1px solid $greymaxcolor;
-	padding: $form-element-padding;
-    background: radial-gradient(112.16% 1918.01% at 45.89% -17.4%, #1C1D25 0%, #0C0D0F 100%);
+	padding: 16px 22px;
+    background: transparent;
 
 	@include placeholder {
-		color: $btn-color;
+		color: $greytwocolor;
 	}
 }
 

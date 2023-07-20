@@ -1,21 +1,32 @@
 .footer {
     flex-shrink: 0;
-    //background: $backgroundcolor;
-    background: transparent;
+    background: $footerback;
     &__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 48px 0;
+        @include media("<=tablet") {
+            padding: 20px 0;
+            flex-direction: column;
+            justify-content: space-between;
+        }
     }
     &__logo {
         width: 232px;
         height: 35px;
+        @include media("<=tablet") {
+            width: 180px;
+            margin-bottom: 20px;
+        }
     }
     &__text {
         margin: 0;
         font-size: 14px;
         line-height: 140%;
         color: $btncolor;
+        @include media("<=tablet") {
+            margin-top: 20px;
+        }
     }
 }

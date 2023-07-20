@@ -7,6 +7,10 @@
     padding: 0 0 180px;
     &__wrapper {
         display: flex;
+        @include media("<=desktop") {
+            display: flex;
+            flex-direction: column;
+        }
     }
     &__left {
         position: relative;

@@ -91,6 +91,9 @@ a {
         -webkit-transform-origin: right;
         transform-origin: right;
         border-bottom: 1px solid $white;
+        @include media("<=desktop") {
+            bottom: -.015em;
+        }
     }
     &:hover {
         &:after {
