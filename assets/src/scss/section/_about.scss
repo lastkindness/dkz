@@ -26,6 +26,9 @@
         backdrop-filter: blur(10px);
         border-radius: 20px;
         margin: 0 auto;
+        @include media('<=700px') {
+            flex-direction: column;
+        }
     }
     &__column {
         display: flex;

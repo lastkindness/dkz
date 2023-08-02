@@ -16,10 +16,6 @@
         align-items: center;
         justify-content: center;
         transition: 0.3s all;
-        @include media("<=desktop") {
-            width: 30px;
-            height: 30px;
-        }
         &:after {
             display: none;
         }
@@ -27,9 +23,6 @@
             font-size: 22px;
             &:before {
                 color: $iconcolor;
-            }
-            @include media("<=desktop") {
-                font-size: 16px;
             }
         }
         &:hover {

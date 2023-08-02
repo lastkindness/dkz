@@ -1,5 +1,8 @@
 .quote {
     margin: 120px 0;
+    @include media('<=desktop') {
+        margin: 20px 0;
+    }
     &__heading {
         margin: 0;
         text-align: center;
@@ -69,6 +72,12 @@
         }
         @include media(">=desktop") {
             left: 200px;
+        }
+        &.prev, &.next {
+            @include media('<=1200px') {
+                position: absolute;
+                top: var(--swiper-navigation-top-offset, 20%);
+            }
         }
         &:hover {
             background: $backgroundcolor;

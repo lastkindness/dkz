@@ -3,12 +3,28 @@
     z-index: 2;
     height: 183px;
     width: 183px;
+    @include media('<=1500px') {
+        height: 120px;
+        width: 120px;
+    }
+    @include media('<=desktop') {
+        height: 70px;
+        width: 70px;
+    }
     &:after {
         display: none;
     }
     &__play {
         position: absolute;
         z-index: 2;
+        @include media('<=1500px') {
+            height: 60px;
+            width: 60px;
+        }
+        @include media('<=desktop') {
+            height: 35px;
+            width: 35px;
+        }
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
