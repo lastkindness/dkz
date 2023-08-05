@@ -1,17 +1,30 @@
 .heading {
     margin: 171px 0 54px;
     text-align: center;
+    @include media('<=1248px') {
+        margin: 134px 0 24px;
+    }
+    @include media('<=768px') {
+        margin: 64px 0 24px;
+    }
     &__title {
         margin-bottom: 24px;
     }
     &__text {
         max-width: 671px;
         margin: 0 auto;
+
     }
     &__linked {
         position: absolute;
         top: 80px;
         right: 380px;
+        @include media('<=1730px') {
+            right: 10%;
+        }
+        @include media('<=768px') {
+            top: 0px;
+        }
     }
 }
 
@@ -19,8 +32,15 @@
 .services {
     &__grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(340px, 490px));
         grid-gap: 30px;
+        @include media('<=1566px') {
+            grid-template-columns: repeat(2, minmax(340px, 490px));
+        }
+        @include media('<=840px') {
+            display: flex;
+            flex-direction: column;
+        }
         &-item {
             &:first-child {
                 display: grid;
@@ -31,6 +51,10 @@
                 grid-row-start: 1;
                 grid-row-end: 2;
                 grid-template-rows: auto;
+                @include media('<=840px') {
+                    display: flex;
+                    flex-direction: column;
+                }
                 &>*{
                     grid-column-start: 2;
                     grid-column-end: 3;
@@ -51,6 +75,9 @@
                     &__text {
                         font-size: 18px;
                         margin-top: 0;
+                        @include media('<=840px') {
+                            display: none;
+                        }
                     }
                     &__icon {
                         transform: translateY(-10px);

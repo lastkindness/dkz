@@ -7,6 +7,9 @@
     overflow-x: auto;
     height: 65px;
     position: relative;
+    @include media('<=1240px') {
+        margin: 20px 0 0;
+    }
     &__item {
         align-items: center;
         width: auto;

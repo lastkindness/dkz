@@ -1,14 +1,29 @@
 .what-we {
     margin: 64px 0 156px;
+    @include media('<=1240px') {
+        margin: 0 0 32px;
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        @include media('<=1240px') {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
     }
     &__left {
         width: 39%;
         margin-left: 10%;
+        @include media('<=1240px') {
+            width: 90%;
+            margin-left: 0px;
+        }
         &-title {
             margin-bottom: 42px;
+            @include media('<=1240px') {
+                margin-top: 20px;
+            }
         }
         &-btn {
             margin-top: 14px;
@@ -19,5 +34,10 @@
     }
     &__right {
         width: 47%;
+        &-img {
+            @include media('<=840px') {
+                display: none;
+            }
+        }
     }
 }

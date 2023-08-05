@@ -107,7 +107,10 @@ Template name: Front About Us
 <section class="helicopter" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/src/img/helicopter.jpg')">
     <div class="container">
         <div class="helicopter__wrapper">
-            <div class="helicopter__text h3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+            <div class="helicopter__text">
+                <div class="helicopter__text-title h3">Watch video</div>
+                <p class="helicopter__text-text p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+            </div>
             <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/striple.svg" alt="" class="helicopter__vector">
             <a href="#" data-video='{"type": "html5", "video": "<?php echo get_template_directory_uri(); ?>/acf-blocks/video/img/file_example_MP4_480_1_5MG.mp4", "fluidWidth": true}' class="helicopter__linked watch-video-button">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/triangle.svg" alt="" class="helicopter__linked-play watch-video-button__play">
@@ -143,8 +146,8 @@ Template name: Front About Us
                     </blockquote>
                 </div>
             </div>
-            <div class="swiper-button-next "></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next next"></div>
+            <div class="swiper-button-prev prev"></div>
             <div class="swiper-pagination"></div>
         </div>
     </div>

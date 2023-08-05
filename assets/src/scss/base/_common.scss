@@ -78,12 +78,18 @@ a {
         font-size: 12px;
         max-width: 140px;
     }
+    @include media('<=1240px') {
+        max-width: 240px;
+    }
 }
 
 .container {
     max-width: 1530px;
     margin: 0 auto;
     width: 100%;
+    @include media("<=1370px") {
+        padding: 0 25px 0;
+    }
     @include media("<=widescreen-lg") {
         max-width: 1240px;
     }
@@ -95,7 +101,7 @@ a {
         padding: 0 32px;
     }
     @include media("<=phone") {
-        padding: 0 24px;
+        padding: 0 16px;
     }
 }
 

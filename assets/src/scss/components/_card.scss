@@ -21,11 +21,18 @@
         font-size: 24px;
         color: $btncolor;
         margin: 24px 0 0 0;
+        @include media('<=840px') {
+            position: absolute;
+            top: 75%;
+        }
     }
     &__text {
         margin: 12px 0;
         color: $greycolor;
         font-size: 16px;
+        @include media('<=840px') {
+            display: none;
+        }
     }
     &__icon {
         display: flex;
