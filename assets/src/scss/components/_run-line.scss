@@ -5,6 +5,9 @@
     overflow: hidden;
     display: inline-block;
     flex-grow: 1;
+    @include media('<=1240px') {
+        margin: 20px 0 0;
+    }
     &__item {
         align-items: center;
         width: 100%;

@@ -1,0 +1,14 @@
+.error {
+    &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    &__title {
+        margin-top: 300px;
+        @include media ('<=700px') {
+            margin-top: 200px;
+        }
+    }
+}

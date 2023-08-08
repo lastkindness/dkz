@@ -17,8 +17,15 @@
         height: 401px;
         object-fit: cover;
         object-position: center;
+        @include media('<=840px') {
+            width: 294px;
+            height: 158px;
+        }
     }
     &__item {
         width: 750px;
+        @include media('<=840px') {
+            width: 394px;
+        }
     }
 }

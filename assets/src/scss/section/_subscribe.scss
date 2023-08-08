@@ -29,6 +29,9 @@
             border: none !important;
             padding: 10px 200px 10px 50px !important;
             z-index: 0;
+            @include media('<=800px') {
+                padding: 0px 100px 0px 50px !important;
+            }
             &::placeholder {
                 color: $greytwocolor !important;
             }
@@ -51,6 +54,30 @@
             min-width: 218px !important;
             text-transform: uppercase;
             transform: translateY(-50%);
+            &.btn {
+                @include media('<=800px') {
+                    padding: 18px 20px !important;
+                    min-width: 60px !important;
+                }
+            }
+            .icon {
+                display: none;
+                font-size: 22px;
+                @include media('<=800px') {
+                    display: block;
+                }
+            }
+            .text {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                text-align: center;
+                margin-bottom: 0;
+                color: $black;
+                @include media('<=800px') {
+                    display: none;
+                }
+            }
         }
     }
 }

@@ -42,7 +42,7 @@ h3, .h3 {
 	font-size: $h3-font-size;
     letter-spacing: 0.04em;
     @include media("<=tablet") {
-        font-size: 28px;
+        font-size: 24px;
     }
 }
 
@@ -52,7 +52,7 @@ h4, .h4 {
 	font-size: $h4-font-size;
     font-weight: 400;
     @include media("<=tablet") {
-        font-size: 24px;
+        font-size: 22px;
     }
 }
 
@@ -67,6 +67,9 @@ h6, .h6 {
 p {
 	margin: 0 0 1em;
     color: $greycolor;
+    @include media("<=tablet") {
+        font-size: 14px;
+    }
 }
 
 a {

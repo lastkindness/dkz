@@ -3,16 +3,29 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    @include media('<=desktop') {
+        margin: 40px 0;
+    }
     &__wrapper {
         padding: 293px 0 396px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @include media('<=desktop') {
+            padding: 100px 0 196px;
+        }
     }
     &__linked {
         margin-top: 635px;
         left: 85px;
+        @include media('<=desktop') {
+            margin-top: 370px;
+            left: 13%;
+        }
+        @include media('<=tablet') {
+            left: 10%;
+        }
         &::after {
             display: none;
         }
@@ -21,8 +34,27 @@
         margin-top: 230px;
         position: absolute;
         left: 13%;
+        @include media('<=1800px') {
+            left: 15%;
+        }
+        @include media('<=1500px') {
+            margin-top: 310px;
+            left: 14%;
+            width: 210px;
+            height: 200px;
+        }
+        @include media('<=desktop') {
+            display: none;
+        }
     }
     &__text {
-        width: 785px;
+        max-width: 586px;
+        margin-right: 10%;
+        @include media('<=1720px') {
+            margin-bottom: 140px;
+        }
+        @include media('<=1500px') {
+            margin-bottom: 0px;
+        }
     }
 }
