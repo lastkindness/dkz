@@ -64,6 +64,7 @@
                         "id": ""
                     },
                     "choices": {
+                        "messanger": "Messanger",
                         "facebook": "Facebook",
                         "twitter": "Twitter",
                         "instagram": "Instagram",
@@ -98,6 +99,26 @@
                     "parent_repeater": "field_6413360945d6b"
                 }
             ]
+        },
+        {
+            "key": "field_64b925c2f9f02",
+            "label": "Copyright",
+            "name": "copyright",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
@@ -118,5 +139,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1678980766
+    "modified": 1689855970
 }

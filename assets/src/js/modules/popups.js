@@ -1,8 +1,9 @@
 export default () => {
     const html = document.getElementById('html');
     const popupElements = document.querySelectorAll('[data-popup]');
-    const closeButtons = document.querySelectorAll('.contacts__popup-close');
-    const popupContainers = document.querySelectorAll('.contacts__popup');
+    const closeButtons = document.querySelectorAll('.popup-close');
+    const popupContainers = document.querySelectorAll('.popup');
+
     popupElements.forEach((element) => {
         element.addEventListener('click', activatePopup);
     });

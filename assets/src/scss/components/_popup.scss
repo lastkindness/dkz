@@ -1,7 +1,5 @@
 .popup {
     display: none;
-    width: 50%;
-    height: auto;
     padding: 120px 20px 80px;
     margin: 0;
     top: 50%;
@@ -10,9 +8,11 @@
     right: unset;
     overflow: visible;
     transform: translate(-50%, -50%);
-    position: absolute;
-    background-color: $greycolor;
-    z-index: 1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparentize($footerback, 0.5);
+    z-index: 100;
     &.active {
         display: block;
     }

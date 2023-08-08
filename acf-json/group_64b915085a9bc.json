@@ -1,11 +1,11 @@
 {
-    "key": "group_60dafc33897f1",
-    "title": "Header",
+    "key": "group_64b915085a9bc",
+    "title": "Theme General Settings",
     "fields": [
         {
-            "key": "field_60dafc3e610af",
-            "label": "Logo",
-            "name": "logo",
+            "key": "field_64b915094c7df",
+            "label": "Body General Background Image",
+            "name": "body_general",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -16,8 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
-            "preview_size": "medium",
+            "return_format": "url",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -25,27 +24,8 @@
             "max_width": "",
             "max_height": "",
             "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_64b91f5c612c7",
-            "label": "Header Contact Button",
-            "name": "btn",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "mime_types": "",
+            "preview_size": "medium"
         }
     ],
     "location": [
@@ -53,7 +33,7 @@
             {
                 "param": "options_page",
                 "operator": "==",
-                "value": "acf-options-header"
+                "value": "theme-general-settings"
             }
         ]
     ],
@@ -66,5 +46,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1689853833
+    "modified": 1689851756
 }

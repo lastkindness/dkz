@@ -185,16 +185,15 @@ $im-no-media-expressions: ('screen', 'portrait', 'landscape') !default;
 ///
 /// @param {String} $message - Message to log
 ///
-@function log($message) {
+/*@function log($message) {
 	@if feature-exists('at-error') {
         @error $message;
 	} @else {
 		@warn $message;
 		$_: noop();
 	}
-
 	@return $message;
-}
+}*/
 
 
 ///

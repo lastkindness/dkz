@@ -23,6 +23,7 @@
     &__btn {
         display: flex;
         justify-content: center;
+        cursor: pointer;
         &.btn {
             padding: 16px 22px;
             @include media("<=tablet") {
@@ -144,7 +145,8 @@
     justify-content: space-around;
     align-items: center;
     li {
-        margin-right: 35px;
+        text-transform: uppercase;
+        margin: 0 35px 10px 0;
         @include media("<=tablet") {
             margin: 20px 0;
             &:last-child {
@@ -156,8 +158,12 @@
         }
     }
     &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
         @include animate(opacity visibility);
-
         @include media("<=tablet") {
             display: flex;
             align-items: center;
@@ -168,18 +174,13 @@
             height: 100vh;
             left: 0;
             right: 0;
-            background-color: rgba(48, 49, 62, 0.9);
+            background-color: rgba(48, 49, 62, 0.98);
             transition: 0.3s all;
             padding: 15px;
             opacity: 0;
             visibility: hidden;
             z-index: 996;
             margin-top: 0;
-        }
-
-        @include media(">=tablet") {
-            display: flex;
-            flex-wrap: wrap;
         }
     }
 }
@@ -256,7 +257,6 @@
     width: 42px;
     height: 37px;
     transform: translateY(-50%);
-    text-indent: -9999px;
     overflow: hidden;
     text-decoration: none;
     z-index: 99;

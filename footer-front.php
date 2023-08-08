@@ -2,6 +2,7 @@
     <section id="hidden-content" class="write-us popup">
         <div class="container">
             <div class="write-us__wrapper">
+                <div class="popup-close"></div>
                 <div class="write-us__title">Write Us</div>
                 <div class="write-us__text">Leave a request and we will contact you shortly</div>
                 <form class="write-us__inputs">
@@ -23,6 +24,7 @@
         </div>
     </section>
 </div>
+
 <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
