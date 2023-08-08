@@ -22,8 +22,8 @@
         @include media('<=1730px') {
             right: 10%;
         }
-        @include media('<=768px') {
-            top: 0px;
+        @include media('<=1280px') {
+            display: none;
         }
     }
 }

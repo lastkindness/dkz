@@ -187,7 +187,7 @@ $im-no-media-expressions: ('screen', 'portrait', 'landscape') !default;
 ///
 @function log($message) {
 	@if feature-exists('at-error') {
-		@error $message;
+        @error $message;
 	} @else {
 		@warn $message;
 		$_: noop();
