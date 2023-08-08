@@ -28,6 +28,9 @@ body {
             opacity: 1;
             visibility: visible;
         }
+        .icon-burger {
+            display: none;
+        }
     }
     &.scroll {
         .header {

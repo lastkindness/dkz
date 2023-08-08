@@ -22,7 +22,7 @@ textarea {
     border: 1px solid $greymaxcolor;
 	padding: 16px 22px;
     background: transparent;
-
+    color: $activebtn;
 	@include placeholder {
 		color: $greytwocolor;
 	}

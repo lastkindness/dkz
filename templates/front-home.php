@@ -8,7 +8,7 @@ Template name: Front Home
 <?php get_header('front'); ?>
 <main>
 
-    <section class="hero">
+    <section class="hero fade-content">
         <div class="container">
             <div class="hero__wrapper">
                 <div class="hero__left">
@@ -35,7 +35,7 @@ Template name: Front Home
         </div>
     </section>
 
-    <section class="subscribe">
+    <section class="subscribe fade-content">
         <div class="container">
             <div class="subscribe__wrapper">
                 <h2 class="subscribe__title">Subscribe to our news</h2>
@@ -49,7 +49,7 @@ Template name: Front Home
         </div>
     </section>
 
-    <section class="share">
+    <section class="share fade-content">
         <div class="container">
             <div class="share__icons">
                 <a class="share__round subscribe__round">
@@ -69,7 +69,7 @@ Template name: Front Home
     </section>
 
 
-    <section class="about-us">
+    <section class="about-us fade-content">
         <div class="container">
             <div class="about-us__wrapper">
                 <div class="about-us__pictures">
@@ -101,7 +101,7 @@ Template name: Front Home
         </div>
     </section>
 
-    <section class="helicopter" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/src/img/helicopter.jpg')">
+    <section class="helicopter fade-content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/src/img/helicopter.jpg')">
         <div class="container">
             <div class="helicopter__wrapper">
                 <div class="helicopter__text h3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
@@ -114,7 +114,7 @@ Template name: Front Home
         </div>
     </section>
 
-    <section class="quote">
+    <section class="quote fade-content">
         <div class="container">
             <h2 class="quote__heading">reviews</h2>
             <div class="quote__slider swiper">
@@ -148,7 +148,7 @@ Template name: Front Home
     </section>
 
 
-    <section class="about" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/src/img/gradient.svg')">
+    <section class="about fade-content" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/src/img/gradient.svg')">
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__box">

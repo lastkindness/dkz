@@ -1,28 +1,40 @@
 .run-line {
     margin: 100px 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    overflow-x: auto;
     height: 65px;
     position: relative;
+    overflow: hidden;
+    display: inline-block;
+    flex-grow: 1;
     &__item {
         align-items: center;
-        width: auto;
+        width: 100%;
         background-color: $itemcolor;
-        padding: 9px 23px 9px 11px;
+        padding: 9px 0 9px 0;
         border-radius: 36px;
-        margin-right: 24px;
-        display: flex;
+        display: inline-flex;
         flex-direction: row;
         justify-content: space-around;
         height: 65px;
+        flex-grow: 1;
         &-text {
             font-size: 18px;
             font-weight: 500;
-            margin: 0 0 0 12px;
+            padding: 0 40px 0 10px;
             white-space: nowrap;
+            margin: 0;
         }
+        &-img {
+            width: 46px;
+            height: 46px;
+            display: block;
+            margin: 0 0 0 40px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 24px;
     }
 }

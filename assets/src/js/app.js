@@ -9,7 +9,8 @@ import curvedIMG from './modules/curvedIMG.js';
 import popups from './modules/popups.js';
 import map from "./modules/map";
 import burgerMenu from "./modules/burgerMenu.js";
-
+import horizontalPanel from "./modules/horizontalPanel";
+//import fadeContent from "./modules/fadeContent";
 
 $(document).ready(() => {
     header();
@@ -18,5 +19,7 @@ $(document).ready(() => {
     popups();
     map();
     burgerMenu();
+    horizontalPanel();
+    //fadeContent();
 });
 

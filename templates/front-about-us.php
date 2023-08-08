@@ -35,26 +35,28 @@ Template name: Front About Us
 </section>
 
 <section class="run-line">
-        <div class="run-line__item">
+    <div class="run-line__wrapper" data-ticker="list">
+        <div class="run-line__item" data-ticker="item">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/green.svg" alt="" class="run-line__item-img">
             <div class="run-line__item-text h6">Studio Video Production</div>
         </div>
-        <div class="run-line__item">
+        <div class="run-line__item" data-ticker="item">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/pink.svg" alt="" class="run-line__item-img">
             <div class="run-line__item-text h6">Previzualisation</div>
         </div>
-        <div class="run-line__item">
+        <div class="run-line__item" data-ticker="item">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/blue.svg" alt="" class="run-line__item-img">
             <div class="run-line__item-text h6">Custom Content creation</div>
         </div>
-        <div class="run-line__item">
+        <div class="run-line__item" data-ticker="item">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/red.svg" alt="" class="run-line__item-img">
             <div class="run-line__item-text h6">Conventions & Exhibitions</div>
         </div>
-        <div class="run-line__item">
+        <div class="run-line__item" data-ticker="item">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/src/img/violet.svg" alt="" class="run-line__item-img">
             <div class="run-line__item-text h6">Corporate Events</div>
         </div>
+    </div>
 </section>
 
 <section class="what-we">
@@ -169,6 +171,54 @@ Template name: Front About Us
     </div>
 </section>
 
+<table class="shop_table shop_table_responsive">
+    <thead>
+        <tr>
+            <th>
+                <span class="remove" data-coupon="9bm29xtw">x</span>
+                <span>Applied Coupon:</span>
+            </th>
+            <th>9bm29xtw</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Product:</td>
+            <td>Pink Lady-Beanie</td>
+        </tr>
+    <tr>
+        <td>Discount:</td>
+        <td>
+            <span class="woocommerce-Price-amount amount">
+                <span class="woocommerce-Price-currencySymbol">CHF</span>0.10
+            </span>
+        </td>
+    </tr>
+    </tbody>
+    <thead>
+        <tr>
+            <th>
+                <span class="remove" data-coupon="nw2q9j3p">x</span>
+                <span>Applied Coupon:</span >
+            </th>
+            <th>nw2q9j3p</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Product:</td>
+            <td>Pink Lady-Beanie</td>
+        </tr>
+        <tr>
+            <td>Discount:</td>
+            <td>
+                <span class="woocommerce-Price-amount amount">
+                    <span class="woocommerce-Price-currencySymbol">CHF</span>12.00
+                </span>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
 
 <?php get_footer('front'); ?>
