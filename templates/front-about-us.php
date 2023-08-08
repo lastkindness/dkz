@@ -174,54 +174,5 @@ Template name: Front About Us
     </div>
 </section>
 
-<table class="shop_table shop_table_responsive">
-    <thead>
-        <tr>
-            <th>
-                <span class="remove" data-coupon="9bm29xtw">x</span>
-                <span>Applied Coupon:</span>
-            </th>
-            <th>9bm29xtw</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Product:</td>
-            <td>Pink Lady-Beanie</td>
-        </tr>
-    <tr>
-        <td>Discount:</td>
-        <td>
-            <span class="woocommerce-Price-amount amount">
-                <span class="woocommerce-Price-currencySymbol">CHF</span>0.10
-            </span>
-        </td>
-    </tr>
-    </tbody>
-    <thead>
-        <tr>
-            <th>
-                <span class="remove" data-coupon="nw2q9j3p">x</span>
-                <span>Applied Coupon:</span >
-            </th>
-            <th>nw2q9j3p</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Product:</td>
-            <td>Pink Lady-Beanie</td>
-        </tr>
-        <tr>
-            <td>Discount:</td>
-            <td>
-                <span class="woocommerce-Price-amount amount">
-                    <span class="woocommerce-Price-currencySymbol">CHF</span>12.00
-                </span>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
 
 <?php get_footer('front'); ?>
