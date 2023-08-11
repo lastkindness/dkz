@@ -7,8 +7,12 @@
     }
     &__title {
         margin-top: 300px;
+        text-align: center;
         @include media ('<=700px') {
             margin-top: 200px;
         }
+    }
+    &__subtitle {
+        text-align: center;
     }
 }

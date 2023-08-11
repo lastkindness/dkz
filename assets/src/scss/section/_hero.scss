@@ -17,7 +17,7 @@
     }
     &__left {
         position: relative;
-        width: 670px;
+        max-width: 670px;
         margin-top: 200px;
         z-index: 0;
         @include media('<=desktop') {
@@ -57,6 +57,7 @@
             position: relative;
             z-index: 0;
             margin: 100px 0 0 0;
+            height: 100%;
         }
         &-link {
             &:after {

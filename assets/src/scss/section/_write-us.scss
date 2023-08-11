@@ -1,5 +1,8 @@
 .write-us {
     margin: 0 0 80px;
+    @include media('<=800px') {
+        margin: 0 0 40px;
+    }
     &__wrapper {
         position: relative;
     }
@@ -36,6 +39,11 @@
         gap: 32px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+        @include media('<=800px') {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
         &-button {
             position: absolute;
             right: 50px;

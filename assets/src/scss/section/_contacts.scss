@@ -1,9 +1,15 @@
 .contacts {
     margin: 200px 0 0;
+    @include media('<=800px') {
+        margin: 100px 0 0;
+    }
     &__title {
         position: absolute;
         z-index: 1;
         top: 160px;
+        @include media('<=800px') {
+            top: 60px;
+        }
     }
     &__contacts {
         display: flex;

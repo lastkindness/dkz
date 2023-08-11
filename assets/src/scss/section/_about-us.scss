@@ -111,12 +111,19 @@
         margin-top: 32px;
         display: flex;
         justify-content: space-between;
+        @include media('<=800px') {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
         &-title {
             font-size: 30px;
             margin-bottom: 8px;
         }
         &-item {
             margin-right: 70px;
+            @include media('<=800px') {
+                margin-right: 0;
+            }
             &:last-child {
                 margin-right: 0;
             }
