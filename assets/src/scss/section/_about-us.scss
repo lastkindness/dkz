@@ -1,6 +1,6 @@
 .about-us {
     margin: 120px 0;
-    @include media('<=1366') {
+    @include media('<=1366px') {
         margin: 40px 0;
     }
     @include media('<=desktop') {
